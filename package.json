@@ -1,0 +1,23 @@
+{
+  "name": "anonymousperpetrators.co.uk",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigeljohnwade/anonymousperpetrators.co.uk.git"
+  },
+  "author": "Nigel Wade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk/issues"
+  },
+  "homepage": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk#readme",
+  "devDependencies": {
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3"
+  }
+}
