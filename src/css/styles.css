@@ -1,0 +1,15 @@
+@import url("../assets/fonts/fonts.css");
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: url('../assets/images/lego_dj.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+

@@ -1,0 +1,11 @@
+.typography {
+    font-family: "ITC Avant Garde Gothic W01 Boo", sans-serif;
+}
+
+.typography-h1 {
+    font-size: 3rem;
+}
+
+.typography-lowercase{
+    text-transform: lowercase;
+}
