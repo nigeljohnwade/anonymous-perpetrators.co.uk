@@ -4,7 +4,10 @@
   "description": "Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -16,8 +19,10 @@
     "url": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk/issues"
   },
   "homepage": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk#readme",
-  "devDependencies": {
-    "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.3"
+  "devDependencies": {},
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
