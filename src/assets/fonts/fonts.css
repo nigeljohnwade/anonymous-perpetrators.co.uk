@@ -1,0 +1,28 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=7a446442-d312-4dee-b0c6-6b239b929046");
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic W01 Boo";
+    src: url("Fonts/90b08c17-b769-4463-9939-a3820ccf17a3.woff2") format("woff2"), url("Fonts/96f551d8-3cb6-4eda-9b83-2b983f493dff.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic W01 Dem";
+    src: url("Fonts/7817ec09-33e3-43ab-a79c-51a9e8f6e64f.woff2") format("woff2"), url("Fonts/580dba85-abcb-41a3-b161-2b617fdb78d8.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic W01 BkC";
+    src: url("Fonts/768e5d08-7294-4dc5-a471-78a9e558e2c3.woff2") format("woff2"), url("Fonts/d8bb09b9-8b52-43ae-ae4b-54b5466eec04.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic W01 DmC";
+    src: url("Fonts/b2fdbc89-f154-4a07-b598-66adccbf2749.woff2") format("woff2"), url("Fonts/ac2da484-0529-4d23-be4a-ecc438e22c9e.woff") format("woff");
+}
