@@ -1,11 +1,24 @@
 @import url("../assets/fonts/fonts.css");
 
+:root{
+    --h1-font-size: 3rem;
+    --gutter: 2rem;
+    --transition: 300ms;
+    --text-shadow:
+        0 0 24px black,
+        0 0 12px black,
+        0 0 6px black,
+        0 0 1px black
+}
+
 html {
     min-height: 100%;
 }
 
 body {
     min-height: 100%;
+    margin: 0;
+    padding: 0;
     background-image: url('../assets/images/lego_dj.jpg');
     background-position: left top;
     background-repeat: no-repeat;
