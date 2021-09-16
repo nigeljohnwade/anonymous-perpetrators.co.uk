@@ -1,8 +1,20 @@
 import React from 'react';
+import Typography from '../components/atoms/Typography/Typography';
+import Navigation from '../components/molecules/Navigation/Navigation';
+import Page from '../components/layout/Page/Page';
 
 const HomePage = () => {
     return (
-        <span>⎧⁏::;⎫</span>
+        <Page>
+            <Typography
+                element="h1"
+                variant="h1"
+                modifier="lowercase"
+            >
+                Anonymous Perpetrators
+            </Typography>
+            <Navigation/>
+        </Page>
     );
 };
 
