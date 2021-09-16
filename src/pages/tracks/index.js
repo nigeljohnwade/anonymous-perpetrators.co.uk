@@ -21,20 +21,22 @@ const TracksPage = ({
             {trackData && trackData.length > 0 && trackData.map(track => {
                 return (
                     <Fragment key={track[2]}>
-                        <Typography
-                            element="h2"
-                            variant="h2"
-                        >
-                            {track[0]}
-                        </Typography>
-                        <Typography
-                            element="p"
-                        >
-                            {track[1]}
-                        </Typography>
-                        <Typography>
-                            {track[2]}
-                        </Typography>
+                        <a href={`/tracks/${track[0]}`}>
+                            <Typography
+                                element="h2"
+                                variant="h2"
+                            >
+                                {track[0]}
+                            </Typography>
+                            <Typography
+                                element="p"
+                            >
+                                {track[1]}
+                            </Typography>
+                            <Typography>
+                                {track[2]}
+                            </Typography>
+                        </a>
                     </Fragment>
                 );
             })
