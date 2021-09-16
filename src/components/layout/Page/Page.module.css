@@ -1,0 +1,4 @@
+.page{
+    padding: 0 var(--gutter);
+    transition: padding var(--transition) ease-in-out;
+}
