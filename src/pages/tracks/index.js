@@ -4,10 +4,8 @@ import Navigation from '../../components/molecules/Navigation/Navigation';
 import Page from '../../components/layout/Page/Page';
 
 const TracksPage = ({
-    headerData,
     trackData,
 }) => {
-    console.log(trackData, headerData);
     return (
         <Page>
             <Typography
@@ -18,29 +16,29 @@ const TracksPage = ({
                 Tracks
             </Typography>
             <Navigation/>
-            {trackData && trackData.length > 0 && trackData.map(track => {
-                return (
-                    <Fragment key={track[2]}>
-                        <a href={`/tracks/${track[0]}`}>
-                            <Typography
-                                element="h2"
-                                variant="h2"
-                            >
-                                {track[0]}
-                            </Typography>
-                            <Typography
-                                element="p"
-                            >
-                                {track[1]}
-                            </Typography>
-                            <Typography>
-                                {track[2]}
-                            </Typography>
-                        </a>
-                    </Fragment>
-                );
-            })
-
+            {
+                trackData && trackData.length > 0 && trackData.map(track => {
+                    return (
+                        <Fragment key={track[2]}>
+                            <a href={`/tracks/${track[0]}`}>
+                                <Typography
+                                    element="h2"
+                                    variant="h2"
+                                >
+                                    {track[0]}
+                                </Typography>
+                                <Typography
+                                    element="p"
+                                >
+                                    {track[1]}
+                                </Typography>
+                                <Typography>
+                                    {track[2]}
+                                </Typography>
+                            </a>
+                        </Fragment>
+                    );
+                })
             }
         </Page>
     );
