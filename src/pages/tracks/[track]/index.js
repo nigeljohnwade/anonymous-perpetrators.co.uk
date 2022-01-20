@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Typography from '../../../components/atoms/Typography/Typography';
 import Navigation from '../../../components/molecules/Navigation/Navigation';
 import Page from '../../../components/layout/Page/Page';
+import SoundCloudEmbed from '../../../components/thirdParty/SoundCloudEmbed';
 
 const TracksPage = ({
     headerData,
@@ -13,7 +14,7 @@ const TracksPage = ({
     const trackItemData = trackData.filter(item => {
         return item[0] === trackName;
     })[0];
-    console.log(trackItemData)
+    console.log(trackItemData);
     return (
         <Page>
             <Typography
@@ -39,6 +40,9 @@ const TracksPage = ({
                 <Typography>
                     {trackItemData[2]}
                 </Typography>
+                <SoundCloudEmbed/>
+                {/*<audio src="https://anonperpaudio.s3.eu-west-1.amazonaws.com/AP+Mesmerising+Lipstick.wav" controls></audio>*/}
+
             </Fragment>
 
         </Page>
