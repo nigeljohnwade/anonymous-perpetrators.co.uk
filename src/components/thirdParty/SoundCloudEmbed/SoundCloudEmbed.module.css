@@ -1,0 +1,22 @@
+.sound-cloud-embed {
+    height: 64px;
+    padding: 8px;
+    background-color: black;
+}
+
+.sound-cloud-embed-wrapper {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+.sound-cloud-embed-link {
+    color: #cccccc;
+    text-decoration: none;
+}

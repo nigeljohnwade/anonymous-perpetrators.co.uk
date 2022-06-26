@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 import { useRouter } from 'next/router';
-import Typography from '../../../components/atoms/Typography/Typography';
-import Navigation from '../../../components/molecules/Navigation/Navigation';
-import Page from '../../../components/layout/Page/Page';
-import SoundCloudEmbed from '../../../components/thirdParty/SoundCloudEmbed';
+
+import Typography from 'components/atoms/Typography/Typography';
+import Navigation from 'components/molecules/Navigation/Navigation';
+import TrackCard from 'components/organisms/TrackCard/TrackCard';
+import Page from 'components/layout/Page/Page';
 
 const TracksPage = ({
     headerData,
@@ -14,7 +15,7 @@ const TracksPage = ({
     const trackItemData = trackData.filter(item => {
         return item[0] === trackName;
     })[0];
-    console.log(trackItemData);
+
     return (
         <Page>
             <Typography
@@ -25,25 +26,10 @@ const TracksPage = ({
                 {trackItemData[0]}
             </Typography>
             <Navigation/>
-            <Fragment key={trackItemData[3]}>
-                <Typography
-                    element="h2"
-                    variant="h2"
-                >
-                    {trackItemData[0]}
-                </Typography>
-                <Typography
-                    element="p"
-                >
-                    {trackItemData[1]}
-                </Typography>
-                <Typography>
-                    {trackItemData[2]}
-                </Typography>
-                <SoundCloudEmbed/>
-                {/*<audio src="https://anonperpaudio.s3.eu-west-1.amazonaws.com/AP+Mesmerising+Lipstick.wav" controls></audio>*/}
-
-            </Fragment>
+            <TrackCard
+                key={trackItemData[3]}
+                trackItemData={trackItemData}
+            />
 
         </Page>
     );

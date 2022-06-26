@@ -1,7 +1,7 @@
 import React from 'react';
-import Typography from '../components/atoms/Typography/Typography';
-import Navigation from '../components/molecules/Navigation/Navigation';
-import Page from '../components/layout/Page/Page';
+import Typography from 'components/atoms/Typography/Typography';
+import Navigation from 'components/molecules/Navigation/Navigation';
+import Page from 'components/layout/Page/Page';
 
 const HomePage = () => {
     return (

@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-import Typography from '../../components/atoms/Typography/Typography';
-import Navigation from '../../components/molecules/Navigation/Navigation';
-import Page from '../../components/layout/Page/Page';
+import React from 'react';
+import Typography from 'components/atoms/Typography/Typography';
+import Navigation from 'components/molecules/Navigation/Navigation';
+import Page from 'components/layout/Page/Page';
+import Card from 'components/molecules/Card/Card';
 
 const TracksPage = ({
     trackData,
 }) => {
-    console.log(trackData)
     return (
         <Page>
             <Typography
@@ -20,7 +20,7 @@ const TracksPage = ({
             {
                 trackData && trackData.length > 0 && trackData.map(track => {
                     return (
-                        <Fragment key={track[2]}>
+                        <Card key={track[2]}>
                             <a href={`/tracks/${track[0]}`}>
                                 <Typography
                                     element="h2"
@@ -37,7 +37,7 @@ const TracksPage = ({
                                     {track[2]}
                                 </Typography>
                             </a>
-                        </Fragment>
+                        </Card>
                     );
                 })
             }
