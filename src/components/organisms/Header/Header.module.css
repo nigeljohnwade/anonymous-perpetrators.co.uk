@@ -1,0 +1,6 @@
+.header{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: calc(var(--gutter) * 2);
+}

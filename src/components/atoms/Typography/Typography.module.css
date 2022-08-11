@@ -2,16 +2,27 @@
     font-family: "ITC Avant Garde Gothic W01 Boo", sans-serif;
     transition: font-size calc(var(--transition) * 4)  ease-in-out;
     text-shadow: var(--text-shadow);
+    margin: 0;
+    padding: 0;
 }
 
 .typography-h1 {
     font-size: var(--h1-font-size);
 }
 
-.typography-link{
+.typography-link,
+.typography-link:link,
+.typography-link:visited,
+.typography-link:hover,
+.typography-link:active{
     color: white;
+    text-decoration-color: white;
 }
 
 .typography-lowercase{
     text-transform: lowercase;
+}
+
+.typography-card-title-link{
+    font-size: 2rem;
 }
