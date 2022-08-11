@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Page from 'components/layout/Page/Page';
 import Header from '../components/organisms/Header/Header';
 
