@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from '../../atoms/Typography/Typography';
+import Typography from 'components/atoms/Typography/Typography';
 import styles from './Navigation.module.css';
 
 const Navigation = () => {
@@ -9,6 +9,7 @@ const Navigation = () => {
                 element="a"
                 href="/"
                 variant="link"
+                modifier="lowercase"
             >
                 Home
             </Typography>
@@ -16,6 +17,7 @@ const Navigation = () => {
                 element="a"
                 href="/tracks"
                 variant="link"
+                modifier="lowercase"
             >
                 Tracks
             </Typography>

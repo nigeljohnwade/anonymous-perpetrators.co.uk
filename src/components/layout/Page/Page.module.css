@@ -1,4 +1,9 @@
 .page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gutter);
     padding: 0 var(--gutter);
     transition: padding var(--transition) ease-in-out;
 }
