@@ -1,13 +1,10 @@
 .nav{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
-}
-
-.nav > * + *{
-    margin-top: var(--gutter);
-    transition: margin-top calc(var(--transition) * 2) ease-in-out;
+    justify-content: flex-end;
+    gap: var(--gutter);
 }
 
 .nav a{
