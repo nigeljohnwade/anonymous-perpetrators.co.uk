@@ -1,46 +1,40 @@
 import React from 'react';
+import styles from './index.module.css';
 import Typography from 'components/atoms/Typography/Typography';
-import Navigation from 'components/molecules/Navigation/Navigation';
 import Page from 'components/layout/Page/Page';
 import Card from 'components/molecules/Card/Card';
+import Header from '../../components/organisms/Header/Header';
 
 const TracksPage = ({
     trackData,
 }) => {
     return (
         <Page>
-            <Typography
-                element="h1"
-                variant="h1"
-                modifier="lowercase"
+            <Header pageTitle="Tracks"/>
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    gap: 'var(--gutter)',
+                }}
             >
-                Tracks
-            </Typography>
-            <Navigation/>
-            {
-                trackData && trackData.length > 0 && trackData.map(track => {
-                    return (
-                        <Card key={track[2]}>
-                            <a href={`/tracks/${track[0]}`}>
+                {
+                    trackData && trackData.length > 0 && trackData.map(track => {
+                        return (
+                            <Card key={track[2]}>
                                 <Typography
-                                    element="h2"
-                                    variant="h2"
+                                    element="a"
+                                    variant="link"
+                                    modifier="card-title-link"
+                                    href={`/tracks/${track[0]}`}
                                 >
                                     {track[0]}
                                 </Typography>
-                                <Typography
-                                    element="p"
-                                >
-                                    {track[1]}
-                                </Typography>
-                                <Typography>
-                                    {track[2]}
-                                </Typography>
-                            </a>
-                        </Card>
-                    );
-                })
-            }
+                            </Card>
+                        );
+                    })
+                }
+            < /div>
         </Page>
     );
 };

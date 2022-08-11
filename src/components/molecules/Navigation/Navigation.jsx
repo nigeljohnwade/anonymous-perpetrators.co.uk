@@ -9,6 +9,7 @@ const Navigation = () => {
                 element="a"
                 href="/"
                 variant="link"
+                modifier="lowercase"
             >
                 Home
             </Typography>
@@ -16,6 +17,7 @@ const Navigation = () => {
                 element="a"
                 href="/tracks"
                 variant="link"
+                modifier="lowercase"
             >
                 Tracks
             </Typography>

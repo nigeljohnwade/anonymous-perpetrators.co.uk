@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
-
+import React from 'react';
 import Typography from 'components/atoms/Typography/Typography';
 import SoundCloudEmbed from 'components/thirdParty/SoundCloudEmbed/SoundCloudEmbed';
+import Card from 'components/molecules/Card/Card';
 
 function TrackCard({
     trackItemData,
 }) {
     return (
-        <Fragment>
+        <Card>
             <Typography
                 element="h2"
                 variant="h2"
@@ -29,7 +29,7 @@ function TrackCard({
                 trackLink={trackItemData[5]}
                 trackName={trackItemData[0]}
             />
-        </Fragment>
+        </Card>
     );
 }
 

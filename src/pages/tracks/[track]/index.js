@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import { useRouter } from 'next/router';
 
-import Typography from 'components/atoms/Typography/Typography';
-import Navigation from 'components/molecules/Navigation/Navigation';
 import TrackCard from 'components/organisms/TrackCard/TrackCard';
 import Page from 'components/layout/Page/Page';
+import Header from 'components/organisms/Header/Header';
 
 const TracksPage = ({
     headerData,
@@ -18,19 +17,11 @@ const TracksPage = ({
 
     return (
         <Page>
-            <Typography
-                element="h1"
-                variant="h1"
-                modifier="lowercase"
-            >
-                {trackItemData[0]}
-            </Typography>
-            <Navigation/>
+            <Header pageTitle={trackItemData[0]}/>
             <TrackCard
                 key={trackItemData[3]}
                 trackItemData={trackItemData}
             />
-
         </Page>
     );
 };
@@ -43,6 +34,8 @@ export async function getServerSideProps() {
         .then(rawData => rawData.split('\r\n'))
         .then(data => data.map(item => item.split('\t')));
     const headerData = trackData.splice(0, 1);
+
+    console.log(trackData);
     return {
         props: {
             trackData,
