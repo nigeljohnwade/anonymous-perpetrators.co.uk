@@ -4,3 +4,7 @@
     justify-content: flex-start;
     gap: calc(var(--gutter) * 2);
 }
+
+.header h1{
+    min-width: fit-content;
+}

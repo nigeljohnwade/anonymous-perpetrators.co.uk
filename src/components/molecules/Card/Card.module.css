@@ -1,6 +1,10 @@
 .card{
+    --card-background: hsl(0deg, 0%, 100%, 0.5);
+}
+
+.card{
     height: 33.33vh;
     flex-basis: 25%;
     padding: calc(var(--gutter) / 2);
-    background-color: white;
+    background-color: var(--card-background);
 }
