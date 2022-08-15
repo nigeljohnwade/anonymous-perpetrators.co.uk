@@ -2,18 +2,21 @@ import React from 'react';
 import Typography from 'components/atoms/Typography/Typography';
 import SoundCloudEmbed from 'components/thirdParty/SoundCloudEmbed/SoundCloudEmbed';
 import Card from 'components/molecules/Card/Card';
+import CardHeader from '../../molecules/CardHeader/CardHeader';
 
 function TrackCard({
     trackItemData,
 }) {
     return (
         <Card>
-            <Typography
-                element="h2"
-                variant="h2"
-            >
-                {trackItemData[0]}
-            </Typography>
+            <CardHeader>
+                <Typography
+                    element="h2"
+                    variant="h2"
+                >
+                    {trackItemData[0]}
+                </Typography>
+            </CardHeader>
             <Typography
                 element="p"
             >

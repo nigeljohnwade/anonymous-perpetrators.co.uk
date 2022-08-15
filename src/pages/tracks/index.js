@@ -1,9 +1,7 @@
 import React from 'react';
-import styles from './index.module.css';
-import Typography from 'components/atoms/Typography/Typography';
 import Page from 'components/layout/Page/Page';
-import Card from 'components/molecules/Card/Card';
 import Header from '../../components/organisms/Header/Header';
+import { TrackLinkCard } from '../../components/organisms/TrackLinkCard/TrackLinkCard';
 
 const TracksPage = ({
     trackData,
@@ -21,16 +19,10 @@ const TracksPage = ({
                 {
                     trackData && trackData.length > 0 && trackData.map(track => {
                         return (
-                            <Card key={track[2]}>
-                                <Typography
-                                    element="a"
-                                    variant="link"
-                                    modifier="card-title-link"
-                                    href={`/tracks/${track[0]}`}
-                                >
-                                    {track[0]}
-                                </Typography>
-                            </Card>
+                            <TrackLinkCard
+                                key={track[2]}
+                                track={track}
+                            />
                         );
                     })
                 }

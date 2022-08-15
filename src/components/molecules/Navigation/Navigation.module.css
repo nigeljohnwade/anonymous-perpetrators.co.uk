@@ -10,3 +10,12 @@
 .nav a{
     font-size: 2rem;
 }
+
+.nav a,
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:active{
+    color: var(--white);
+    text-decoration-color: var(--white);
+}

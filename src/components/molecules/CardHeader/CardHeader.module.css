@@ -1,0 +1,18 @@
+.card-header{
+    --neon-pink:  hsla(340deg, 100%, 50%, 0.8);
+}
+
+.card-header a{
+    text-decoration-skip-ink: none;
+    text-shadow: var(--text-glow);
+}
+.card-header a:link,
+.card-header a:active{
+    color: var(--persian-rose);
+}
+.card-header a:visited{
+    color: var(--mardi-gras);
+}
+.card-header a:hover{
+    color: var(--rajah)
+}
