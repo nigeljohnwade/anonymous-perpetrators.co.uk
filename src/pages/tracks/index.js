@@ -11,7 +11,7 @@ const TracksPage = ({
             <Header pageTitle="Tracks"/>
             <div
                 style={{
-                    width: '100vw',
+                    width: 'calc(100vw - (2 * var(--gutter)))',
                     overflowX: 'scroll',
                 }}
             >
