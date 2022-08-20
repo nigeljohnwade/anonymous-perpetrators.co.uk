@@ -5,6 +5,7 @@
 .card {
     height: 33.33vh;
     flex-basis: 25%;
+    flex-shrink: 0;
     padding: calc(var(--gutter) / 2);
     background-color: var(--card-background);
 }

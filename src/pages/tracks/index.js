@@ -11,22 +11,30 @@ const TracksPage = ({
             <Header pageTitle="Tracks"/>
             <div
                 style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    gap: 'var(--gutter)',
+                    width: '100vw',
+                    overflowX: 'scroll',
                 }}
             >
-                {
-                    trackData && trackData.length > 0 && trackData.map(track => {
-                        return (
-                            <TrackLinkCard
-                                key={track[2]}
-                                track={track}
-                            />
-                        );
-                    })
-                }
-            < /div>
+
+                <div
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        gap: 'var(--gutter)',
+                    }}
+                >
+                    {
+                        trackData && trackData.length > 0 && trackData.map(track => {
+                            return (
+                                <TrackLinkCard
+                                    key={track[2]}
+                                    track={track}
+                                />
+                            );
+                        })
+                    }
+                < /div>
+            </div>
         </Page>
     );
 };
