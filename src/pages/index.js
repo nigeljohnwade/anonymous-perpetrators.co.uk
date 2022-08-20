@@ -9,7 +9,7 @@ const HomePage = () => {
             <main style={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyItems: 'flex-end',
+                justifyContent: 'flex-end',
             }}>
                 <a href="https://promocards.byspotify.com/share/162ce1d96336e8c0a5d467f66e33bd208fb740f3">
                     <img
