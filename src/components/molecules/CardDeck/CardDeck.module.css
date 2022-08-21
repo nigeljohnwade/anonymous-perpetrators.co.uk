@@ -1,0 +1,5 @@
+.card-deck{
+    display: flex;
+    flexDirection: row;
+    gap: var(--gutter);
+}

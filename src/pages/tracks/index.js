@@ -1,7 +1,8 @@
 import React from 'react';
 import Page from 'components/layout/Page/Page';
-import Header from '../../components/organisms/Header/Header';
-import { TrackLinkCard } from '../../components/organisms/TrackLinkCard/TrackLinkCard';
+import Header from 'components/organisms/Header/Header';
+import TrackLinkCard from 'components/organisms/TrackLinkCard/TrackLinkCard';
+import CardDeck from 'components/molecules/CardDeck/CardDeck';
 
 const TracksPage = ({
     trackData,
@@ -16,13 +17,7 @@ const TracksPage = ({
                 }}
             >
 
-                <div
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        gap: 'var(--gutter)',
-                    }}
-                >
+                <CardDeck>
                     {
                         trackData && trackData.length > 0 && trackData.map(track => {
                             return (
@@ -33,7 +28,7 @@ const TracksPage = ({
                             );
                         })
                     }
-                < /div>
+                </CardDeck>
             </div>
         </Page>
     );

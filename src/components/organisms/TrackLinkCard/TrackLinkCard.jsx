@@ -3,7 +3,7 @@ import Card from 'components/molecules/Card/Card';
 import CardHeader from 'components/molecules/CardHeader/CardHeader';
 import Typography from 'components/atoms/Typography/Typography';
 
-export function TrackLinkCard({track}) {
+const TrackLinkCard = ({track}) => {
     return <Card>
         <CardHeader>
             <Typography
@@ -17,3 +17,5 @@ export function TrackLinkCard({track}) {
         </CardHeader>
     </Card>;
 }
+
+export default TrackLinkCard;
