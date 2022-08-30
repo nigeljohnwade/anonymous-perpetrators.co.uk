@@ -1,10 +1,18 @@
 .card-header{
     --neon-pink:  hsla(340deg, 100%, 50%, 0.8);
 }
-
+.card-header{
+    position: relative;
+    z-index: 1;
+    padding: calc(var(--gutter) / 2);
+    padding-bottom: var(--gutter);
+    background-image: linear-gradient(to bottom, hsl(225deg 0% 100%/ 0.5) 0%, hsl(225deg 0% 100%/ 0.5) 80%, hsl(225deg 0% 100%/ 0));
+}
 .card-header a{
     text-decoration-skip-ink: none;
-    text-shadow: var(--text-glow);
+    text-shadow:
+        var(--text-highlight-glow),
+        var(--text-glow);
 }
 .card-header a:link,
 .card-header a:active{

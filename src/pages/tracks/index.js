@@ -14,9 +14,9 @@ const TracksPage = ({
                 style={{
                     width: 'calc(100vw - (2 * var(--gutter)))',
                     overflowX: 'scroll',
+                    height: '55vh',
                 }}
             >
-
                 <CardDeck>
                     {
                         trackData && trackData.length > 0 && trackData.map(track => {

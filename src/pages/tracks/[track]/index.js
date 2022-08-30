@@ -18,10 +18,16 @@ const TracksPage = ({
     return (
         <Page>
             <Header pageTitle={trackItemData[0]}/>
-            <TrackCard
-                key={trackItemData[3]}
-                trackItemData={trackItemData}
-            />
+            <div
+                style={{
+                    flexBasis: '50%',
+                }}
+            >
+                <TrackCard
+                    key={trackItemData[3]}
+                    trackItemData={trackItemData}
+                />
+            </div>
         </Page>
     );
 };

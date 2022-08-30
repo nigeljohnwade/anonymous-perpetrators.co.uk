@@ -15,6 +15,10 @@
         0 0 12px currentColor,
         0 0 6px currentColor,
         0 0 1px currentColor;
+    --text-highlight-glow:
+        0 0 6px var(--white),
+        0 0 3px var(--white),
+        0 0 1px var(--white);
     /* https://www.schemecolor.com/vaporwave.php */
     --persian-rose: hsl(329, 92%, 57%);
     --rajah: hsl(32, 93%, 65%);
