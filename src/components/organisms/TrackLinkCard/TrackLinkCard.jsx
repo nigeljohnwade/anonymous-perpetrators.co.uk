@@ -10,6 +10,7 @@ const TrackLinkCard = ({track}) => {
             style={{
                 flexBasis: '25%',
                 flexShrink: '0',
+                minWidth: '25em',
             }}
         >
             <Card>
