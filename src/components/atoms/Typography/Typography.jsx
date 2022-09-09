@@ -9,13 +9,16 @@ const Typography = ({
     ...elementProps
 }) => {
     const Element = element;
+    const modifiers = Array.isArray(modifier)
+        ? modifier.map(modifier => styles[`typography-${modifier}`])
+        : [styles[`typography-${modifier}`]];
 
     return (
         <Element
             className={[
                 styles['typography'],
                 styles[`typography-${variant}`],
-                (modifier ? styles[`typography-${modifier}`] : ''),
+                ...modifiers,
             ].join(' ')}
             {...elementProps}
         >

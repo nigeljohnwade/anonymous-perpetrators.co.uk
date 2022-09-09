@@ -13,6 +13,7 @@ function TrackCard({
                 <Typography
                     element="h2"
                     variant="h2"
+                    modifier="shadow"
                 >
                     {trackItemData[0]}
                 </Typography>

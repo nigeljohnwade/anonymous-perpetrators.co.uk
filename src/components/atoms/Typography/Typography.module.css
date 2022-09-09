@@ -17,3 +17,7 @@
     font-size: 2rem;
     font-family: "ITC Avant Garde Gothic W01 DmC", sans-serif;
 }
+
+.typography-shadow{
+    text-shadow: var(--text-shadow);
+}
