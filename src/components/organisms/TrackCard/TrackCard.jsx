@@ -14,7 +14,7 @@ function TrackCard({
                     element="h2"
                     modifier="shadow"
                 >
-                    {trackItemData[0]}
+                    {trackItemData[9]}
                 </Typography>
             </CardHeader>
             <Typography

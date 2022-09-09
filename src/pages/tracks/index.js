@@ -22,7 +22,7 @@ const TracksPage = ({
                         trackData && trackData.length > 0 && trackData.map(track => {
                             return (
                                 <TrackLinkCard
-                                    key={track[2]}
+                                    key={track[0]}
                                     track={track}
                                 />
                             );

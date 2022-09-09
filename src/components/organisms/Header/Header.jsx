@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Header.module.css';
 import Typography from 'components/atoms/Typography/Typography';
 import Navigation from 'components/molecules/Navigation/Navigation';
+import styles from './Header.module.css';
 
 const Header = ({
     pageTitle

@@ -23,7 +23,7 @@ const TracksPage = ({
             backgroundImage={backgroundImage}
             backgroundSize={'100vh'}
         >
-            <Header pageTitle={trackItemData[0]}/>
+            <Header pageTitle={trackItemData[9]}/>
             <div
                 style={{
                     flexBasis: '50%',

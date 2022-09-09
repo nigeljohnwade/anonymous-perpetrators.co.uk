@@ -1,10 +1,13 @@
 .header{
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: calc(var(--gutter) * 2);
 }
 
 .header h1{
     min-width: fit-content;
+    /*align-self: flex-end;
+    flex-grow: 1;*/
 }
