@@ -8,7 +8,7 @@ const TracksPage = ({
     trackData,
 }) => {
     return (
-        <Page>
+        <Page backgroundImage={'url(/lego_dj.jpg)'}>
             <Header pageTitle="Tracks"/>
             <div
                 style={{

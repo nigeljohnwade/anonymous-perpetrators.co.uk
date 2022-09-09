@@ -4,7 +4,9 @@ import Header from '../components/organisms/Header/Header';
 
 const HomePage = () => {
     return (
-        <Page>
+        <Page
+            backgroundImage={'url(/lego_dj.jpg)'}
+        >
             <Header pageTitle="Anonymous Perpetrators"/>
             <main style={{
                 display: 'flex',

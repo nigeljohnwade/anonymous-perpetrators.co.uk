@@ -14,9 +14,15 @@ const TracksPage = ({
     const trackItemData = trackData.filter(item => {
         return item[0] === trackName;
     })[0];
+    const backgroundColor = trackItemData[7] !== '' ? trackItemData[7] : undefined;
+    const backgroundImage = trackItemData[8] !== '' ? `url(${trackItemData[8]})` : undefined;
 
     return (
-        <Page>
+        <Page
+            backgroundColor={backgroundColor}
+            backgroundImage={backgroundImage}
+            backgroundSize={'100vh'}
+        >
             <Header pageTitle={trackItemData[0]}/>
             <div
                 style={{
@@ -41,7 +47,6 @@ export async function getServerSideProps() {
         .then(data => data.map(item => item.split('\t')));
     const headerData = trackData.splice(0, 1);
 
-    console.log(trackData);
     return {
         props: {
             trackData,

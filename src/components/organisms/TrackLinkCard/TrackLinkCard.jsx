@@ -13,7 +13,7 @@ const TrackLinkCard = ({track}) => {
                 minWidth: '25em',
             }}
         >
-            <Card>
+            <Card aspect="square">
                 <CardHeader>
                     <Typography
                         element="a"
@@ -21,7 +21,7 @@ const TrackLinkCard = ({track}) => {
                         modifier="card-title-link"
                         href={`/tracks/${track[0]}`}
                     >
-                        {track[0]}
+                        {track[9]}
                     </Typography>
                 </CardHeader>
                 <img
