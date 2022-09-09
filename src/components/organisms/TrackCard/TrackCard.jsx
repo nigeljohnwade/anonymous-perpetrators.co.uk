@@ -17,21 +17,36 @@ function TrackCard({
                     {trackItemData[9]}
                 </Typography>
             </CardHeader>
-            <Typography
-                element="p"
+            <div
+                style={{
+                    padding: '1rem'
+                }}
             >
-                {trackItemData[1]}
-            </Typography>
-            <Typography>
-                {trackItemData[2]}
-            </Typography>
-            <SoundCloudEmbed
-                artistLink="https://soundcloud.com/anonymousperpetrators"
-                artistName="anonymousperpetrators"
-                trackId={trackItemData[4]}
-                trackLink={trackItemData[5]}
-                trackName={trackItemData[0]}
-            />
+
+                {trackItemData[1].split('\\n').map(p => (
+                        <Typography
+                            element="p"
+                        >
+                            {p}
+                        </Typography>
+                    )
+                )}
+                {trackItemData[2].split('\\n').map(p => (
+                        <Typography
+                            element="p"
+                        >
+                            {p}
+                        </Typography>
+                    )
+                )}
+                <SoundCloudEmbed
+                    artistLink="https://soundcloud.com/anonymousperpetrators"
+                    artistName="anonymousperpetrators"
+                    trackId={trackItemData[4]}
+                    trackLink={trackItemData[5]}
+                    trackName={trackItemData[0]}
+                />
+            </div>
         </Card>
     );
 }
