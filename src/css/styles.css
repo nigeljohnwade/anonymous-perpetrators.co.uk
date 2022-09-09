@@ -47,3 +47,6 @@ h1{
     text-shadow: var(--text-shadow);
 }
 
+p{
+    line-height: 1.25;
+}

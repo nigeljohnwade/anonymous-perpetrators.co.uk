@@ -21,3 +21,7 @@
 .typography-shadow{
     text-shadow: var(--text-shadow);
 }
+
+.typography-indent{
+    text-indent: var(--gutter);
+}

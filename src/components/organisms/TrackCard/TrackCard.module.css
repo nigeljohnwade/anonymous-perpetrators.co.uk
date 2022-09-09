@@ -1,0 +1,8 @@
+.block{
+    max-width: 60em;
+    padding-bottom: var(--gutter);
+}
+
+.block p + p{
+    margin-top: 1rem;
+}
