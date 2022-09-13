@@ -1,5 +1,5 @@
 .card{
-    --card-background: hsl(0deg, 0%, 100%, 0.5);
+    --card-background: hsl(0deg 0% 24% / 78%);
 }
 
 .card {

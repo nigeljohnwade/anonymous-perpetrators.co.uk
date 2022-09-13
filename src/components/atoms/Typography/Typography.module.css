@@ -1,8 +1,6 @@
 .typography {
     font-family: "ITC Avant Garde Gothic W01 Boo", sans-serif;
     transition: font-size calc(var(--transition) * 4)  ease-in-out;
-    margin: 0;
-    padding: 0;
 }
 
 .typography-h1 {

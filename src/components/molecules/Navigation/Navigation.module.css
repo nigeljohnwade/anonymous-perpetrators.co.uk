@@ -8,6 +8,7 @@
 }
 
 .nav a{
+    margin-top: 0;
     font-size: 2rem;
     text-shadow: var(--text-shadow);
 }

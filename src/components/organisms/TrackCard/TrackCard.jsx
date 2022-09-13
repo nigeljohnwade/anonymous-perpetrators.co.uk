@@ -11,12 +11,13 @@ function TrackCard({
     return (
         <Card>
             <CardHeader>
-                <Typography
-                    element="h2"
-                    modifier="shadow"
-                >
-                    {trackItemData[9]}
-                </Typography>
+                <SoundCloudEmbed
+                    artistLink="https://soundcloud.com/anonymousperpetrators"
+                    artistName="anonymousperpetrators"
+                    trackId={trackItemData[4]}
+                    trackLink={trackItemData[5]}
+                    trackName={trackItemData[0]}
+                />
             </CardHeader>
             <div
                 style={{
@@ -27,7 +28,7 @@ function TrackCard({
                     <Typography element="h3">Devices</Typography>
                     {trackItemData[1].split('\\n').map(p => (
                             <Typography
-                                element="p"
+                                element={p !== 'Hardware:' && p !== 'Software:' ? 'p' : 'h4'}
                                 modifier={p !== 'Hardware:' && p !== 'Software:' ? 'indent' : null}
                             >
                                 {p}
@@ -45,13 +46,6 @@ function TrackCard({
                         )
                     )}
                 </div>
-                <SoundCloudEmbed
-                    artistLink="https://soundcloud.com/anonymousperpetrators"
-                    artistName="anonymousperpetrators"
-                    trackId={trackItemData[4]}
-                    trackLink={trackItemData[5]}
-                    trackName={trackItemData[0]}
-                />
             </div>
         </Card>
     );
