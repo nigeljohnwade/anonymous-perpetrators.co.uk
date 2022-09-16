@@ -21,6 +21,14 @@ const Navigation = () => {
             >
                 Tracks
             </Typography>
+            <Typography
+                element="a"
+                href="/devices"
+                variant="link"
+                modifier="lowercase"
+            >
+                Devices
+            </Typography>
         </nav>
     );
 };
