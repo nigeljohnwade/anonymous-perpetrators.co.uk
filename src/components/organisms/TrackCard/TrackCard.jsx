@@ -30,6 +30,7 @@ function TrackCard({
                             <Typography
                                 element={p !== 'Hardware:' && p !== 'Software:' ? 'p' : 'h4'}
                                 modifier={p !== 'Hardware:' && p !== 'Software:' ? 'indent' : null}
+                                key={p.toLowerCase().replace(' ', '_')}
                             >
                                 {p}
                             </Typography>

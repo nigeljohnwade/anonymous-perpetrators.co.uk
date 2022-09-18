@@ -43,7 +43,7 @@ export async function getStaticProps() {
         .then(rawData => rawData.split('\r\n'))
         .then(data => data.map(item => item.split('\t')));
     const headerData = deviceData.splice(0, 1);
-    console.log(deviceData);
+
     return {
         props: {
             deviceData,

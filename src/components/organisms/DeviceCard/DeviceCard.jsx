@@ -10,7 +10,11 @@ function DeviceCard({
     return (
         <Card>
             <CardHeader>
-                {deviceItemData[0]}
+                <Typography
+                    element="h2"
+                >
+                    {deviceItemData[0]}
+                </Typography>
             </CardHeader>
             <div
                 style={{
@@ -18,9 +22,12 @@ function DeviceCard({
                 }}
             >
                 <div className={styles.block}>
-                    {deviceItemData[2] && deviceItemData[2].split('\\n').map(p => (
+                    <Typography element="h3">Features</Typography>
+                    {deviceItemData[2].split('\\n').map(p => (
                             <Typography
                                 element="p"
+                                modifier="indent"
+                                key={p.toLowerCase().replace(' ', '_')}
                             >
                                 {p}
                             </Typography>
