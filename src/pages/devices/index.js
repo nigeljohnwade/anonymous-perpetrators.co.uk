@@ -38,13 +38,12 @@ const DevicesPage = ({
 export default DevicesPage;
 
 export async function getStaticProps() {
-    const deviceData = [
-        ['Moog Mavis', 'moog_mavis.png'],
-        ['Roland Tb-03 Boutique', 'roland_tb03_boutique.png'],
-        ['Roland Aira TB-3', 'roland_aira_tb3.png'],
-        ['Arturia Microbrute', 'arturia_microbrute.png'],
-    ]
-    const headerData = ['Device Name'];
+    const deviceData = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTB6b_fWUvjJStAnbO-147rRk9qgWk6RBc0UntZLE9dHIC6ituaDErw1CKgnN7a6sqMUYIZAF7jdWiT/pub?gid=643050921&output=tsv')
+        .then(response => response.text())
+        .then(rawData => rawData.split('\r\n'))
+        .then(data => data.map(item => item.split('\t')));
+    const headerData = deviceData.splice(0, 1);
+    console.log(deviceData);
     return {
         props: {
             deviceData,
