@@ -10,14 +10,19 @@ const TracksPage = ({
     return (
         <Page backgroundImage={'url(/lego_dj.jpg)'}>
             <Header pageTitle="Tracks"/>
-            <div
-                style={{
-                    width: 'calc(100vw - (2 * var(--gutter)))',
-                    overflowX: 'scroll',
-                    height: '55vh',
-                }}
-            >
-                <CardDeck>
+            {/*<div*/}
+            {/*    style={{*/}
+            {/*        width: 'calc(100vw - (2 * var(--gutter)))',*/}
+            {/*        overflowX: 'scroll',*/}
+            {/*        height: '55vh',*/}
+            {/*    }}*/}
+            {/*>*/}
+                <CardDeck
+                    additionalStyles={{
+                        width: 'calc(100vw - (2 * var(--gutter)))',
+                        overflowX: 'scroll',
+                        height: '55vh',
+                    }}>
                     {
                         trackData && trackData.length > 0 && trackData.map(track => {
                             return (
@@ -29,7 +34,7 @@ const TracksPage = ({
                         })
                     }
                 </CardDeck>
-            </div>
+            {/*</div>*/}
         </Page>
     );
 };

@@ -1,9 +1,15 @@
 import React from 'react';
 import styles from './CardDeck.module.css';
 
-const CardDeck = ({children}) =>{
+const CardDeck = ({
+    additionalStyles,
+    children,
+}) =>{
     return (
-        <div className={styles['card-deck']}>
+        <div
+            style={additionalStyles}
+            className={styles['card-deck']}
+        >
             {children}
         </div>
     )
