@@ -7,30 +7,27 @@ import CardDeck from 'components/molecules/CardDeck/CardDeck';
 const DevicesPage = ({
     deviceData,
 }) => {
-    console.log(deviceData);
     return (
         <Page backgroundImage={'url(/lego_dj.jpg)'}>
             <Header pageTitle="Tracks"/>
-            <div
-                style={{
+            <CardDeck
+                additionalStyles={{
                     width: 'calc(100vw - (2 * var(--gutter)))',
                     overflowX: 'scroll',
                     height: '55vh',
                 }}
             >
-                <CardDeck>
-                    {
-                        deviceData && deviceData.length > 0 && deviceData.map(device => {
-                            return (
-                                <DeviceLinkCard
-                                    key={device[0]}
-                                    device={device}
-                                />
-                            );
-                        })
-                    }
-                </CardDeck>
-            </div>
+                {
+                    deviceData && deviceData.length > 0 && deviceData.map(device => {
+                        return (
+                            <DeviceLinkCard
+                                key={device[0]}
+                                device={device}
+                            />
+                        );
+                    })
+                }
+            </CardDeck>
         </Page>
     );
 };
