@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk#readme",
   "devDependencies": {
+    "cypress": "^10.9.0",
     "eslint": "8.0.0",
     "eslint-config-next": "11.1.2"
   },
