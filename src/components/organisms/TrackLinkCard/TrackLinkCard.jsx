@@ -6,30 +6,22 @@ import styles from './TrackLinkCard.module.css';
 
 const TrackLinkCard = ({track}) => {
     return (
-        <div
-            style={{
-                flexBasis: '25%',
-                flexShrink: '0',
-                minWidth: '25em',
-            }}
-        >
-            <Card aspect="square">
-                <CardHeader>
-                    <Typography
-                        element="a"
-                        variant="link"
-                        modifier="card-title-link"
-                        href={`/tracks/${track[0]}`}
-                    >
-                        {track[9]}
-                    </Typography>
-                </CardHeader>
-                <img
-                    src={`/${track[6]}`}
-                    className={styles['card-image']}
-                />
-            </Card>
-        </div>
+        <Card aspect="square">
+            <CardHeader>
+                <Typography
+                    element="a"
+                    variant="link"
+                    modifier="card-title-link"
+                    href={`/tracks/${track[0]}`}
+                >
+                    {track[9]}
+                </Typography>
+            </CardHeader>
+            <img
+                src={`/${track[6]}`}
+                className={styles['card-image']}
+            />
+        </Card>
     );
 };
 

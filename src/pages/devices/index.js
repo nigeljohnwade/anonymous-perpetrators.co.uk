@@ -10,13 +10,7 @@ const DevicesPage = ({
     return (
         <Page backgroundImage={'url(/lego_dj.jpg)'}>
             <Header pageTitle="Tracks"/>
-            <CardDeck
-                additionalStyles={{
-                    width: 'calc(100vw - (2 * var(--gutter)))',
-                    overflowX: 'scroll',
-                    height: '55vh',
-                }}
-            >
+            <CardDeck>
                 {
                     deviceData && deviceData.length > 0 && deviceData.map(device => {
                         return (
