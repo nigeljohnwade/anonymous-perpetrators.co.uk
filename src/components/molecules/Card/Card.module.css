@@ -9,7 +9,6 @@
     scroll-snap-align: start;
     flex-basis: 25%;
     flex-shrink: 0;
-    minWidth: 25em;
 }
 
 .card.square{
