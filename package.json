@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk#readme",
   "devDependencies": {
-    "cypress": "^10.9.0",
-    "eslint": "8.0.0",
-    "eslint-config-next": "11.1.2"
+    "cypress": "^11.0.0",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.0"
   },
   "dependencies": {
-    "next": "^11.1.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "next": "^13.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
