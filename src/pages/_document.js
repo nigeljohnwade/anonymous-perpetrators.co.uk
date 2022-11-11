@@ -19,6 +19,7 @@ export default function Document() {
                     title="Web Analytics Made Easy - Statcounter"
                     href="https://statcounter.com/"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img
                         className="statcounter"

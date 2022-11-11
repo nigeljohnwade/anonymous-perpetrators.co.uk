@@ -27,6 +27,7 @@ const SoundCloudEmbed = ({
                     href={artistLink}
                     title={artistName}
                     target="_blank"
+                    rel="noreferrer"
                 >
                     {artistName && artistName}
                 </a> ·
@@ -34,6 +35,7 @@ const SoundCloudEmbed = ({
                     href={trackLink}
                     title={trackName}
                     target="_blank"
+                    rel="noreferrer"
                 >
                     {trackName && trackName}
                 </a>
