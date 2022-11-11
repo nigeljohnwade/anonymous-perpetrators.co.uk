@@ -38,8 +38,9 @@ function TrackCard({
                     )}
                 </div>
                 <div className={styles.block}>
-                    {trackItemData[2].split('\\n').map(p => (
+                    {trackItemData[2].split('\\n').map((p, i) => (
                             <Typography
+                                key={i}
                                 element="p"
                             >
                                 {p}
