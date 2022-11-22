@@ -7,3 +7,77 @@
     padding: 0 var(--gutter);
     transition: padding var(--transition) ease-in-out;
 }
+
+/*.ground-plane {*/
+/*    width: 1000vw;*/
+/*    height: 100vh;*/
+/*    !*animation: rotate 3s infinite;*!*/
+/*    transform-origin: center;*/
+/*    transform: translateY(10vh) translateZ(0vh) translateX(-500vw) rotateX(90deg);*/
+/*}*/
+
+/*@keyframes rotate {*/
+/*    0% {*/
+/*        transform: rotateX(0deg);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotateX(360deg);*/
+/*    }*/
+/*}*/
+
+/*.vapor-grid,*/
+/*.vapor-grid-glow {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+
+/*.vapor-grid {*/
+/*    width: inherit;*/
+/*    height: inherit;*/
+/*    background: repeating-linear-gradient(*/
+/*        to right,*/
+/*        transparent 0px,*/
+/*        transparent 48px,*/
+/*        green 49px,*/
+/*        green 50px*/
+/*    ),*/
+/*    repeating-linear-gradient(*/
+/*        to bottom,*/
+/*        green 0px,*/
+/*        transparent 1px,*/
+/*        transparent 48px,*/
+/*        green 49px,*/
+/*        green 50px*/
+/*    );*/
+/*}*/
+
+/*.vapor-grid-glow {*/
+/*    width: inherit;*/
+/*    height: inherit;*/
+/*    background: repeating-linear-gradient(*/
+/*        to right,*/
+/*        rgb(0 128 0 / 0.5) 0px,*/
+/*        transparent 6px,*/
+/*        transparent 43px,*/
+/*        rgb(0 128 0 / 0.5) 49px,*/
+/*        rgb(0 128 0 / 0.5) 50px*/
+/*    ),*/
+/*    repeating-linear-gradient(*/
+/*        to bottom,*/
+/*        rgb(0 128 0 / 0.5) 0px,*/
+/*        transparent 6px,*/
+/*        transparent 43px,*/
+/*        rgb(0 128 0 / 0.5) 49px,*/
+/*        rgb(0 128 0 / 0.5) 50px*/
+/*    );*/
+/*}*/
+
+/*.sky-gradient {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100vw;*/
+/*    height: 50vh;*/
+/*    background-image: linear-gradient(to bottom, blue 0%, pink 100%);*/
+/*}*/
