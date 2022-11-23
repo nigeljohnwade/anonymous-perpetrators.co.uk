@@ -14,7 +14,7 @@ export default function Document() {
             <body>
             <Main />
             <NextScript />
-            <div className="statcounter">
+            <div className="statcounter" style={{position:'absolute', bottom:  0}}>
                 <a
                     title="Web Analytics Made Easy - Statcounter"
                     href="https://statcounter.com/"

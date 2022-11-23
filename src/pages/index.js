@@ -1,11 +1,11 @@
 import React from 'react';
 import Page from 'components/layout/Page/Page';
-import Header from '../components/organisms/Header/Header';
+import Header from 'components/organisms/Header/Header';
 
 const HomePage = () => {
     return (
         <Page
-            backgroundImage={'url(/lego_dj.jpg)'}
+            backgroundImage={'url(/vapor_grid.png)'}
         >
             <Header pageTitle="Anonymous Perpetrators"/>
             <main style={{
