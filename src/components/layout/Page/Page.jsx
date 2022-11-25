@@ -5,6 +5,8 @@ const Page = ({
     backgroundColor = 'hsl(0deg 0% 0%)',
     backgroundImage = null,
     backgroundSize = '100%',
+    backgroundPositionX= 'left',
+    backgroundPositionY = 'top',
     children,
 }) => {
 
@@ -17,8 +19,8 @@ const Page = ({
                     backgroundImage: backgroundImage,
                     backgroundSize: backgroundSize,
                     backgroundRepeat: 'no-repeat',
-                    backgroundPositionX: 'left',
-                    backgroundPositionY: 'top',
+                    backgroundPositionX: backgroundPositionX,
+                    backgroundPositionY: backgroundPositionY,
                 }}
             >
                 {children}

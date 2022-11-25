@@ -6,6 +6,8 @@ const HomePage = () => {
     return (
         <Page
             backgroundImage={'url(/vapor_grid.png)'}
+            backgroundPositionX={'center'}
+            backgroundSize={'cover'}
         >
             <Header pageTitle="Anonymous Perpetrators"/>
             <main style={{

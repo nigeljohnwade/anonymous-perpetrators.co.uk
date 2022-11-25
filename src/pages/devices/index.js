@@ -8,7 +8,11 @@ const DevicesPage = ({
     deviceData,
 }) => {
     return (
-        <Page backgroundImage={'url(/vapor_grid.png)'}>
+        <Page
+            backgroundImage={'url(/vapor_grid.png)'}
+            backgroundPositionX={'center'}
+            backgroundSize={'cover'}
+        >
             <Header pageTitle="Tracks"/>
             <CardDeck>
                 {
