@@ -28,6 +28,7 @@ export default function Document() {
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                 </a>
+                <a rel="me" href="https://ravenation.club/@anonymousperpetrators">Mastodon</a>
             </div>
             </body>
         </Html>
