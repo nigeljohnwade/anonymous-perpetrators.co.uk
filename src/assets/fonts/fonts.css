@@ -5,8 +5,6 @@ redistribute, convert, modify or reverse engineer this font software. Please con
 Imaging with any questions regarding Web Fonts:  http://www.fonts.com
 */
 
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=7a446442-d312-4dee-b0c6-6b239b929046");
-
 @font-face {
     font-family: "ITC Avant Garde Gothic W01 Boo";
     src: url("Fonts/90b08c17-b769-4463-9939-a3820ccf17a3.woff2") format("woff2"), url("Fonts/96f551d8-3cb6-4eda-9b83-2b983f493dff.woff") format("woff");

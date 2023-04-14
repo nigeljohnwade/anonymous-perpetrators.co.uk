@@ -27,6 +27,20 @@
     --mardi-gras: hsl(310, 74%, 33%);
     --russian-violet: hsl(275, 93%, 16%);
     --color: hsl(61, 23%, 35%);
+    /* Spacing Variables */
+    --containers: 2rem;
+    --components: 1.5rem;
+    --content: 1rem;
+    /* Optimal text block widths */
+    --summary-text: 40ch;
+    --longform-text: 60em;
+    /* Aspect ratios */
+    --square: 1 / 1;
+    --hd: 16 / 9;
+    --sd: 4 / 3;
+    --cinema: 21 / 9;
+    --35mm: 3 / 2;
+    --Univisium: 2 /1;
 }
 
 html {
