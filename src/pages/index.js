@@ -30,6 +30,15 @@ const HomePage = () => {
                         }}
                     />
                 </a>
+                <a href="https://anonymousperpetrators.bandcamp.com/music">
+                    <img
+                        src="/promo_cards_bandcamp.png"
+                        style={{
+                            width: '45vh',
+                            height: '45vh',
+                        }}
+                    />
+                </a>
             </CardDeck>
         </Page>
     );
