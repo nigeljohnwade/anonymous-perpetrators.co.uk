@@ -29,6 +29,14 @@ const Navigation = () => {
             >
                 Devices
             </Typography>
+            <Typography
+                element="a"
+                href="/about"
+                variant="link"
+                modifier="lowercase"
+            >
+                About
+            </Typography>
         </nav>
     );
 };
