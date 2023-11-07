@@ -3,6 +3,7 @@ import Card from 'components/molecules/Card/Card';
 import CardHeader from 'components/molecules/CardHeader/CardHeader';
 import Typography from 'components/atoms/Typography/Typography';
 import styles from './TrackLinkCard.module.css';
+import Image from 'next/image';
 
 const TrackLinkCard = ({track}) => {
     return (
@@ -17,7 +18,9 @@ const TrackLinkCard = ({track}) => {
                     {track[9]}
                 </Typography>
             </CardHeader>
-            <img
+            <Image
+                width={600}
+                height={600}
                 src={`/${track[6]}`}
                 className={styles['card-image']}
             />

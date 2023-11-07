@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Card from 'components/molecules/Card/Card';
 import CardHeader from 'components/molecules/CardHeader/CardHeader';
 import Typography from 'components/atoms/Typography/Typography';
@@ -17,7 +18,10 @@ const DeviceLinkCard = ({device}) => {
                     {device[0]}
                 </Typography>
             </CardHeader>
-            <img
+            <Image
+                width={600}
+                height={600}
+                alt={device[0]}
                 src={`/${device[1]}`}
                 className={styles['card-image']}
             />

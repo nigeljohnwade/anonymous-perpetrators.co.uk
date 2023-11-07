@@ -11,7 +11,6 @@ const HomePage = () => {
             backgroundSize={'cover'}
         >
             <Header pageTitle="Anonymous Perpetrators"/>
-
         </Page>
     );
 };
