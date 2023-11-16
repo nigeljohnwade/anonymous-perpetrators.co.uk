@@ -19,8 +19,8 @@ const TrackLinkCard = ({track}) => {
                 </Typography>
             </CardHeader>
             <Image
-                width={600}
-                height={600}
+                fill
+                sizes="25vw"
                 src={`/${track[6]}`}
                 className={styles['card-image']}
             />

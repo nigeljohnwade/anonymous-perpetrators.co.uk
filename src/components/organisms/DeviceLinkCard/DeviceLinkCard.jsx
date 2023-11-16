@@ -19,11 +19,20 @@ const DeviceLinkCard = ({device}) => {
                 </Typography>
             </CardHeader>
             <Image
-                width={600}
-                height={600}
                 alt={device[0]}
-                src={`/${device[1]}`}
                 className={styles['card-image']}
+                src={`/${device[1]}`}
+                onLoad={(e) => {
+                    if (process.env.NODE_ENV === 'development') {
+                        console.log(`width: ${e.target.naturalWidth}, height: ${e.target.naturalHeight}`);
+                    }
+                }}
+                //either fill.sizes
+                fill
+                sizes="25vw"
+                //or height/width
+                // height={600}
+                // width={600}
             />
         </Card>
     );
