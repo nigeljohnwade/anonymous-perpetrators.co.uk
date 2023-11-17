@@ -23,9 +23,9 @@ const DeviceLinkCard = ({device}) => {
                 className={styles['card-image']}
                 src={`/${device[1]}`}
                 onLoad={(e) => {
-                    if (process.env.NODE_ENV === 'development') {
+                    //if (process.env.NODE_ENV === 'development') {
                         console.log(`width: ${e.target.naturalWidth}, height: ${e.target.naturalHeight}`);
-                    }
+                    //}
                 }}
                 //either fill.sizes
                 fill
