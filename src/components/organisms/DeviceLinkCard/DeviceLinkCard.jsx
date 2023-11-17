@@ -29,7 +29,7 @@ const DeviceLinkCard = ({device}) => {
                 }}
                 //either fill.sizes
                 fill
-                sizes="25vw"
+                sizes="(min-width: 1280px) 640px, (min-width: 1920px) 960px, 480px"
                 //or height/width
                 // height={600}
                 // width={600}
