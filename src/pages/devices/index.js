@@ -13,7 +13,7 @@ const DevicesPage = ({
             backgroundPositionX={'center'}
             backgroundSize={'cover'}
         >
-            <Header pageTitle="Tracks"/>
+            <Header pageTitle="Devices"/>
             <CardDeck>
                 {
                     deviceData && deviceData.length > 0 && deviceData.map(device => {

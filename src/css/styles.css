@@ -62,6 +62,10 @@ h1{
     text-shadow: var(--text-shadow);
 }
 
+.longform-text{
+    width: var(--longform-text);
+    max-width: var(--longform-text);
+}
 p{
     line-height: 1.25;
 }
