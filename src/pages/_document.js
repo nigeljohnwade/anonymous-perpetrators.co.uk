@@ -9,7 +9,10 @@ export default function Document() {
     return (
         <Html lang="en">
             <Head>
-
+                <link
+                    rel="stylesheet"
+                    href="https://use.typekit.net/ufc3flv.css"
+                />
             </Head>
             <body>
             <Main/>
@@ -21,7 +24,7 @@ export default function Document() {
                         className="statcounter"
                         style={{position: 'absolute', bottom: 0}}
                     >
-                        <a
+                    <a
                             title="Web Analytics Made Easy - Statcounter"
                             href="https://statcounter.com/"
                             target="_blank"

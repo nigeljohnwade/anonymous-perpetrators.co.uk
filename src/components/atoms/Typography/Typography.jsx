@@ -16,6 +16,7 @@ const Typography = ({
     return (
         <Element
             className={[
+                "tk-itc-avant-garde-gothic-pro",
                 styles['typography'],
                 styles[`typography-${variant}`],
                 ...modifiers,

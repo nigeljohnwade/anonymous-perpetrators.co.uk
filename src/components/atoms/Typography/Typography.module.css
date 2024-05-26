@@ -1,9 +1,10 @@
 .typography {
-    font-family: "ITC Avant Garde Gothic W01 Boo", sans-serif;
+    font-weight: 300;
     transition: font-size calc(var(--transition) * 4)  ease-in-out;
 }
 
 .typography-h1 {
+    font-weight: 500;
     font-size: var(--h1-font-size);
 }
 
@@ -13,7 +14,7 @@
 
 .typography-card-title-link{
     font-size: 2rem;
-    font-family: "ITC Avant Garde Gothic W01 DmC", sans-serif;
+    font-weight: 500;
 }
 
 .typography-shadow{
