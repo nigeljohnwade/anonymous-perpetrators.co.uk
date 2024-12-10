@@ -6,9 +6,7 @@ import Header from 'components/organisms/Header/Header';
 import TrackLinkCard from 'components/organisms/TrackLinkCard/TrackLinkCard';
 import CardDeck from 'components/molecules/CardDeck/CardDeck';
 
-const TracksPage = ({
-    trackData,
-}) => {
+const TracksPage = () => {
     return (
         <Page
             backgroundImage={'url(/vapor_grid.png)'}
