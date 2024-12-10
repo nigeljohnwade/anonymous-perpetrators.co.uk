@@ -1,0 +1,44 @@
+[
+    {
+        "Device Name": "Moog Mavis",
+        "Device Main Image": "moog_mavis.png",
+        "Device Features": "Analog\\nPatchbay\\nFold",
+        "Device Stub": "moog-mavis"
+    },
+    {
+        "Device Name": "Roland Tb-03 Boutique",
+        "Device Main Image": "roland_tb03_boutique.png",
+        "Device Features": "Sequencer\\nAcid\\nBattery Powered\\nPortable",
+        "Device Stub": "roland_tb03_boutique"
+    },
+    {
+        "Device Name": "Roland Aira TB-3",
+        "Device Main Image": "roland_aira_tb3.png",
+        "Device Features": "Sequencer\\nAcid\\Effects\\nTouch pad",
+        "Device Stub": "roland_aira_tb3"
+    },
+    {
+        "Device Name": "Arturia Microbrute",
+        "Device Main Image": "arturia_microbrute.png",
+        "Device Features": "Sequencer\\nMultiple Waveforms\\nPatchbay",
+        "Device Stub": "arturia_microbrute"
+    },
+    {
+        "Device Name": "Korg Volca Beats",
+        "Device Main Image": "korg_volca_beats.png",
+        "Device Features": "Perfomrance Oriented\\nBattery Powered\\n Portable",
+        "Device Stub": "korg_volca_beats"
+    },
+    {
+        "Device Name": "Moog Werkstatt-01",
+        "Device Main Image": "moog_werkstatt.png",
+        "Device Features": "Analog\\nPatchbay",
+        "Device Stub": "moog_werkstatt"
+    },
+    {
+        "Device Name": "Keystep Pro",
+        "Device Main Image": "keystep_pro.png",
+        "Device Features": "Sequencing workstation\\nVariable probability steps\\n4 tracks\\nCV, gate, curve\\nMIDI",
+        "Device Stub": "keystep_pro"
+    }
+]
