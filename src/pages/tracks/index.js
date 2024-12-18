@@ -1,25 +1,25 @@
 import React from 'react';
+
+import data from 'data/AnonymousPerpetratorsTracks.json';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
 import TrackLinkCard from 'components/organisms/TrackLinkCard/TrackLinkCard';
 import CardDeck from 'components/molecules/CardDeck/CardDeck';
 
-const TracksPage = ({
-    trackData,
-}) => {
+const TracksPage = () => {
     return (
         <Page
             backgroundImage={'url(/vapor_grid.png)'}
             backgroundPositionX={'center'}
             backgroundSize={'cover'}
         >
-            <Header pageTitle="Tracks"/>
+            <Header pageTitle="Tracks" />
             <CardDeck>
                 {
-                    trackData && trackData.length > 0 && trackData.map(track => {
+                    data && data.length > 0 && data.map(track => {
                         return (
                             <TrackLinkCard
-                                key={track[0]}
+                                key={track.Stub}
                                 track={track}
                             />
                         );
@@ -31,18 +31,3 @@ const TracksPage = ({
 };
 
 export default TracksPage;
-
-export async function getStaticProps() {
-    const trackData = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTB6b_fWUvjJStAnbO-147rRk9qgWk6RBc0UntZLE9dHIC6ituaDErw1CKgnN7a6sqMUYIZAF7jdWiT/pub?gid=0&single=true&output=tsv')
-        .then(response => response.text())
-        .then(rawData => rawData.split('\r\n'))
-        .then(data => data.map(item => item.split('\t')));
-    const headerData = trackData.splice(0, 1);
-    return {
-        props: {
-            trackData,
-            headerData,
-            revalidate: 300,
-        }
-    };
-}

@@ -5,7 +5,7 @@ import Typography from 'components/atoms/Typography/Typography';
 import styles from './TrackLinkCard.module.css';
 import Image from 'next/image';
 
-const TrackLinkCard = ({track}) => {
+const TrackLinkCard = ({ track }) => {
     return (
         <Card aspect="square">
             <CardHeader>
@@ -13,15 +13,16 @@ const TrackLinkCard = ({track}) => {
                     element="a"
                     variant="link"
                     modifier="card-title-link"
-                    href={`/tracks/${track[0]}`}
+                    href={`/tracks/${track.Stub}`}
                 >
-                    {track[9]}
+                    {track.Stub}
                 </Typography>
             </CardHeader>
             <Image
+                alt=""
                 fill
                 sizes="(min-width: 1280px) 640px, (min-width: 1920px) 960px, 480px"
-                src={`/${track[6]}`}
+                src={`${track["Track Page Image"]}`}
                 className={styles['card-image']}
             />
         </Card>

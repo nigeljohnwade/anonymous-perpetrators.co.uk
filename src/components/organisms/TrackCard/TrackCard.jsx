@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from 'components/atoms/Typography/Typography';
 import SoundCloudEmbed from 'components/thirdParty/SoundCloudEmbed/SoundCloudEmbed';
 import Card from 'components/molecules/Card/Card';
-import CardHeader from '../../molecules/CardHeader/CardHeader';
+import CardHeader from 'components/molecules/CardHeader/CardHeader';
 import styles from './TrackCard.module.css';
 
 function TrackCard({
@@ -14,9 +14,9 @@ function TrackCard({
                 <SoundCloudEmbed
                     artistLink="https://soundcloud.com/anonymousperpetrators"
                     artistName="anonymousperpetrators"
-                    trackId={trackItemData[4]}
-                    trackLink={trackItemData[5]}
-                    trackName={trackItemData[0]}
+                    trackId={trackItemData['Track Id']}
+                    trackLink={trackItemData['Track Link']}
+                    trackName={trackItemData.Stub}
                 />
             </CardHeader>
             <div
@@ -26,7 +26,7 @@ function TrackCard({
             >
                 <div className={styles.block}>
                     <Typography element="h3">Devices</Typography>
-                    {trackItemData[1].split('\\n').map(p => (
+                    {trackItemData.Devices.split('\\n').map(p => (
                             <Typography
                                 element={p !== 'Hardware:' && p !== 'Software:' ? 'p' : 'h4'}
                                 modifier={p !== 'Hardware:' && p !== 'Software:' ? 'indent' : null}
@@ -38,7 +38,7 @@ function TrackCard({
                     )}
                 </div>
                 <div className={styles.block}>
-                    {trackItemData[2].split('\\n').map((p, i) => (
+                    {trackItemData.Description.split('\\n').map((p, i) => (
                             <Typography
                                 key={i}
                                 element="p"

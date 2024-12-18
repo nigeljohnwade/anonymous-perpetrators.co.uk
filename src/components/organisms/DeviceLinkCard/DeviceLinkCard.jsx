@@ -13,15 +13,15 @@ const DeviceLinkCard = ({device}) => {
                     element="a"
                     variant="link"
                     modifier="card-title-link"
-                    href={`/devices/${device[0]}`}
+                    href={`/devices/${device['Device Stub']}`}
                 >
-                    {device[0]}
+                    {device['Device Name']}
                 </Typography>
             </CardHeader>
             <Image
-                alt={device[0]}
+                alt={device['Device Name']}
                 className={styles['card-image']}
-                src={`/${device[1]}`}
+                src={`/${device['Device Main Image']}`}
                 onLoad={(e) => {
                     //if (process.env.NODE_ENV === 'development') {
                         console.log(`width: ${e.target.naturalWidth}, height: ${e.target.naturalHeight}`);

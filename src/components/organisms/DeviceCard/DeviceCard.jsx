@@ -13,7 +13,7 @@ function DeviceCard({
                 <Typography
                     element="h2"
                 >
-                    {deviceItemData[0]}
+                    {deviceItemData['Device Name']}
                 </Typography>
             </CardHeader>
             <div
@@ -23,7 +23,7 @@ function DeviceCard({
             >
                 <div className={styles.block}>
                     <Typography element="h3">Features</Typography>
-                    {deviceItemData[2].split('\\n').map(p => (
+                    {deviceItemData['Device Features'].split('\\n').map(p => (
                             <Typography
                                 element="p"
                                 modifier="indent"
