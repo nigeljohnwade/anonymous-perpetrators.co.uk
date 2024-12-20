@@ -39,18 +39,21 @@ const TracksPage = () => {
 
 export default TracksPage;
 
-export async function getServerSideProps() {
-    const deviceData = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTB6b_fWUvjJStAnbO-147rRk9qgWk6RBc0UntZLE9dHIC6ituaDErw1CKgnN7a6sqMUYIZAF7jdWiT/pub?gid=643050921&output=tsv')
-        .then(response => response.text())
-        .then(rawData => rawData.split('\r\n'))
-        .then(data => data.map(item => item.split('\t')));
-    const headerData = deviceData.splice(0, 1);
+export async function getStaticPaths() {
+    const paths = data.map(item => {
+        return {params: {device: item['Device Stub']}}
+    });
+    return {paths: paths, fallback: false};
+}
 
+export async function getStaticProps({params}) {
+    const deviceItemData = data.filter(item => {
+        return item['Device Stub'] === params.device;
+    })[0];
     return {
         props: {
-            deviceData,
-            headerData,
-            revalidate: 300,
+            deviceItemData: deviceItemData
         }
     };
 }
+

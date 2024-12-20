@@ -15,7 +15,7 @@ const TrackLinkCard = ({ track }) => {
                     modifier="card-title-link"
                     href={`/tracks/${track.Stub}`}
                 >
-                    {track.Stub}
+                    {track.Title}
                 </Typography>
             </CardHeader>
             <Image

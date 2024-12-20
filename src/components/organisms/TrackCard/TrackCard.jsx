@@ -16,7 +16,7 @@ function TrackCard({
                     artistName="anonymousperpetrators"
                     trackId={trackItemData['Track Id']}
                     trackLink={trackItemData['Track Link']}
-                    trackName={trackItemData.Stub}
+                    trackName={trackItemData.Title}
                 />
             </CardHeader>
             <div
