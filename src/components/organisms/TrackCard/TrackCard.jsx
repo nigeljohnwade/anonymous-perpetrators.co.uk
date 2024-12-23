@@ -16,7 +16,7 @@ function TrackCard({
                     artistName="anonymousperpetrators"
                     trackId={trackItemData['Track Id']}
                     trackLink={trackItemData['Track Link']}
-                    trackName={trackItemData.Title}
+                    trackName={trackItemData['Title']}
                 />
             </CardHeader>
             <div
@@ -26,7 +26,7 @@ function TrackCard({
             >
                 <div className={styles.block}>
                     <Typography element="h3">Devices</Typography>
-                    {trackItemData.Devices.split('\\n').map(p => (
+                    {trackItemData['Devices'] && trackItemData['Devices'].split('\\n').map(p => (
                             <Typography
                                 element={p !== 'Hardware:' && p !== 'Software:' ? 'p' : 'h4'}
                                 modifier={p !== 'Hardware:' && p !== 'Software:' ? 'indent' : null}
@@ -38,7 +38,7 @@ function TrackCard({
                     )}
                 </div>
                 <div className={styles.block}>
-                    {trackItemData.Description.split('\\n').map((p, i) => (
+                    {trackItemData['Description'].split('\\n').map((p, i) => (
                             <Typography
                                 key={i}
                                 element="p"
