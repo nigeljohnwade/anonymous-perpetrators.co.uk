@@ -250,5 +250,17 @@
         "Track Page Colour": "hsl(61, 23%, 35%)",
         "Track Page Image": "/block_element_modifier.png",
         "Title": "Six And Two Threes"
+    },
+    {
+        "Stub": "training-montage",
+        "Devices": "Software:\\nDrum Sequencer\\nRV700 MkII\\nSweeper\\nPulsar\\nJackbox 707\\nPolytone\\nPolysix\\nABL 3",
+        "Description": "Not sure where this came from or why it ended up being 'Training Montage'.",
+        "File Name": "Block Element Modifier.wav",
+        "Track Id": "2095227177",
+        "Track Link": "https://soundcloud.com/anonymousperpetrators/training-montage",
+        "Track Image": "block_element_modifier.png",
+        "Track Page Colour": "hsl(61, 23%, 0%)",
+        "Track Page Image": "/block_element_modifier.png",
+        "Title": "Training Montage"
     }
 ]
