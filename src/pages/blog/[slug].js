@@ -52,12 +52,11 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
 
 export async function getStaticPaths() {
     // getting all .md files from the posts directory
-    const blogs = glob.sync(`../../../blog/apblog/*.md`);
-    // const blogs = glob.sync(`../../../blog/apblog/*.md`);
+    const blogs = await glob.sync(`./blog/apblog/*.md`);
 
     // converting the file names to their slugs
     const blogSlugs = blogs.map((file) =>
-        file.split('/')[1].replace(/ /g, '-').slice(0, -3).trim()
+        file.split('\\')[2].replace(/ /g, '-').slice(0, -3).trim()
     );
 
     // creating a path for each of the `slug` parameter
