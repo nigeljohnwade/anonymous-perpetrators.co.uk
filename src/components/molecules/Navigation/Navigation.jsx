@@ -31,6 +31,15 @@ const Navigation = () => {
             </Typography>
             <Typography
                 element="a"
+                href="/blog"
+                variant="link"
+                modifier="lowercase"
+            >
+                Blog
+            </Typography>
+
+            <Typography
+                element="a"
                 href="/about"
                 variant="link"
                 modifier="lowercase"

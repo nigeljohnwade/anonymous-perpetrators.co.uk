@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Page.module.css';
 
 const Page = ({
+    backgroundAttachment = 'fixed',
     backgroundColor = 'hsl(0deg 0% 0%)',
     backgroundImage = null,
     backgroundSize = '100%',
@@ -16,6 +17,7 @@ const Page = ({
                 className={styles.page}
                 style={{
                     backgroundColor: backgroundColor,
+                    backgroundAttachment: backgroundAttachment,
                     backgroundImage: backgroundImage,
                     backgroundSize: backgroundSize,
                     backgroundRepeat: 'no-repeat',

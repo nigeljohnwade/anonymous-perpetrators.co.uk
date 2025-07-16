@@ -236,7 +236,7 @@
         "Track Link": "https://soundcloud.com/anonymousperpetrators/rule-of-thirds",
         "Track Image": "block_element_modifier.png",
         "Track Page Colour": "hsl(61, 23%, 35%)",
-        "Track Page Image": "/block_element_modifier.png",
+        "Track Page Image": "/rule_of_thirds.jpg",
         "Title": "Rule Of Thirds"
     },
     {
@@ -262,5 +262,17 @@
         "Track Page Colour": "hsl(61, 23%, 0%)",
         "Track Page Image": "/block_element_modifier.png",
         "Title": "Training Montage"
+    },
+    {
+        "Stub": "the-queen-of-fucking-everything",
+        "Devices": "Software:\\nDrum Sequencer\\nRV700 MkII\\nSweeper\\nPulsar\\nJackbox 707\\nPolytone\\nPolysix\\nABL 3",
+        "Description": "Experimenting with a different style.",
+        "File Name": "the-queen-of-fucking-everything.wav",
+        "Track Id": "1817650704",
+        "Track Link": "https://soundcloud.com/anonymousperpetrators/the-queen-of-fking-everythg",
+        "Track Image": "block_element_modifier.png",
+        "Track Page Colour": "hsl(61, 23%, 0%)",
+        "Track Page Image": "/queen.png",
+        "Title": "The Queen Of F**cking Everything"
     }
 ]

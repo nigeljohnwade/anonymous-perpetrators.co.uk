@@ -11,7 +11,12 @@ const HomePage = () => {
             backgroundSize={'cover'}
         >
             <Header pageTitle="About"/>
-            <div className="longform-text">
+            <div style={{
+                padding: '1rem',
+                backgroundColor: 'hsl(0deg 0% 24% / 78%)',
+            }}
+                className="longform-text"
+            >
                 <Typography element="p">Making electronic music since the mid nineties.</Typography>
                 <Typography element="p">The name came from a speech bubble in 200AD, though not verbatim, which was <i>de rigor</i> for the time. I
                     have not read much 2000AD at all.</Typography>
