@@ -18,7 +18,7 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
             backgroundPositionX={'center'}
             backgroundSize={'cover'}
         >
-            <Header pageTitle={frontmatter?.title}/>
+            <Header pageTitle={frontmatter.title}/>
             <div
                 style={{
                     padding: '1rem',
@@ -36,13 +36,13 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
                 </div>
                 <div className={styles.blog__footer}>
                     <Typography element="p">
-                        Author: {frontmatter?.author}
+                        Author: {frontmatter.author}
                     </Typography>
                     <Typography element="p">
-                        On: {new Date(frontmatter?.date).toLocaleDateString()}
+                        On: {new Date(frontmatter.date).toLocaleDateString()}
                     </Typography>
                     <Typography element="p">
-                        In: {frontmatter?.category}
+                        In: {frontmatter.category}
                     </Typography>
                 </div>
             </div>
@@ -77,13 +77,15 @@ export async function getStaticProps(context) {
 
     // retrieving the Markdown file associated to the slug
     // and reading its data
-    const content = await import(`../../../blog/apblog/${slug}.md`);
-    const data = matter(content.default);
+    const content = await import(`../../../blog/apblog/${slug}.md`)
+        .then((data) => {
+            return matter(data.default);
+        });
 
     return {
         props: {
-            frontmatter: data.data,
-            markdownBody: data.content,
+            frontmatter: content.data,
+            markdownBody: content.content,
         },
     };
 }
