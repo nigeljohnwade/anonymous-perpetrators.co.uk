@@ -13,19 +13,6 @@ const HomePage = () => {
             <Header pageTitle="Anonymous Perpetrators"/>
             <CardDeck additionalStyles={{'flexDirection': 'flex-end'}}>
                 <a
-                    href="https://promocards.byspotify.com/api/share/7d9409a0-2f38-405f-b88c-46be5700fe2d"
-                    target="_blank"
-                >
-                    <img
-                        alt="Spotify"
-                        src="/promo_card_spotify_162ce1d96336e8c0a5d467f66e33bd208fb740f3.png"
-                        style={{
-                            width: '45vh',
-                            height: '45vh',
-                        }}
-                    />
-                </a>
-                <a
                     href="https://soundcloud.com/anonymousperpetrators"
                     target="_blank"
                 >
@@ -45,6 +32,19 @@ const HomePage = () => {
                     <img
                         alt="Bandcamp"
                         src="/promo_card_bandcamp.png"
+                        style={{
+                            width: '45vh',
+                            height: '45vh',
+                        }}
+                    />
+                </a>
+                <a
+                    href="https://promocards.byspotify.com/api/share/7d9409a0-2f38-405f-b88c-46be5700fe2d"
+                    target="_blank"
+                >
+                    <img
+                        alt="Spotify"
+                        src="/promo_card_spotify_162ce1d96336e8c0a5d467f66e33bd208fb740f3.png"
                         style={{
                             width: '45vh',
                             height: '45vh',

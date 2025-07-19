@@ -31,7 +31,7 @@
     --content: 1rem;
     /* Optimal text block widths */
     --summary-text: 40ch;
-    --longform-text: 60em;
+    --longform-text: 60ch;
     /* Aspect ratios */
     --square: 1 / 1;
     --hd: 16 / 9;

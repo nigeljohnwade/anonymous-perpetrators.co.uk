@@ -22,3 +22,9 @@
     color: var(--white);
     text-decoration-color: var(--white);
 }
+
+@media screen and (max-width: 960px) {
+    .nav a {
+        font-size: 1.5rem;
+    }
+}

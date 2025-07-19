@@ -7,6 +7,7 @@ import TrackLinkCard from 'components/organisms/TrackLinkCard/TrackLinkCard';
 import CardDeck from 'components/molecules/CardDeck/CardDeck';
 
 const TracksPage = () => {
+
     return (
         <Page
             backgroundImage={'url(/vapor_grid.png)'}
@@ -16,10 +17,10 @@ const TracksPage = () => {
             <Header pageTitle="Tracks" />
             <CardDeck>
                 {
-                    data && data.length > 0 && data.map(track => {
+                    data && data.length > 0 && data.sort((a, b) => Number(a['Track Id']) < Number(b['Track Id']) ? 1 : -1).map(track => {
                         return (
                             <TrackLinkCard
-                                key={track.Stub}
+                                key={track['Stub']}
                                 track={track}
                             />
                         );
