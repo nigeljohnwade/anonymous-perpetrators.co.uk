@@ -9,7 +9,7 @@ import CardDeck from 'components/molecules/CardDeck/CardDeck';
 const DevicesPage = () => {
     return (
         <Page
-            backgroundImage={'url(/vapor_grid.png)'}
+            backgroundImage={'url(/vapor_grid.webp)'}
             backgroundPositionX={'center'}
             backgroundSize={'cover'}
         >

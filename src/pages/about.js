@@ -6,7 +6,7 @@ import Typography from '../components/atoms/Typography/Typography';
 const HomePage = () => {
     return (
         <Page
-            backgroundImage={'url(/vapor_grid.png)'}
+            backgroundImage={'url(/vapor_grid.webp)'}
             backgroundPositionX={'center'}
             backgroundSize={'cover'}
         >

@@ -12,7 +12,7 @@ const BlogList = ({allBlogs}) => {
     return (
         <Page
             backgroundColor={'black'}
-            backgroundImage={'url(/vapor_grid.png)'}
+            backgroundImage={'url(/vapor_grid.webp)'}
             backgroundSize="cover"
             backgroundPositionX="center"
         >

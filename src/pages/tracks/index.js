@@ -10,7 +10,7 @@ const TracksPage = () => {
 
     return (
         <Page
-            backgroundImage={'url(/vapor_grid.png)'}
+            backgroundImage={'url(/vapor_grid.webp)'}
             backgroundPositionX={'center'}
             backgroundSize={'cover'}
         >

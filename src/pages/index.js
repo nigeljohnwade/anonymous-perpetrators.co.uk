@@ -6,7 +6,7 @@ import CardDeck from 'components/molecules/CardDeck/CardDeck';
 const HomePage = () => {
     return (
         <Page
-            backgroundImage={'url(/vapor_grid.png)'}
+            backgroundImage={'url(/vapor_grid.webp)'}
             backgroundPositionX={'center'}m
             backgroundSize={'cover'}
         >
