@@ -7,7 +7,7 @@ const HomePage = () => {
     return (
         <Page
             backgroundImage={'url(/vapor_grid.webp)'}
-            backgroundPositionX={'center'}m
+            backgroundPositionX={'center'}
             backgroundSize={'cover'}
         >
             <Header pageTitle="Anonymous Perpetrators"/>
