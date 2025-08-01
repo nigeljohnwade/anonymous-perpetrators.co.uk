@@ -13,6 +13,7 @@ const HomePage = () => {
                     target="_blank"
                 >
                     <img
+                        loading="eager"
                         alt="Soundcloud"
                         src="/promo_card_soundcloud.png"
                         style={{
@@ -26,6 +27,7 @@ const HomePage = () => {
                     target="_blank"
                 >
                     <img
+                        loading="eager"
                         alt="Bandcamp"
                         src="/promo_card_bandcamp.png"
                         style={{
