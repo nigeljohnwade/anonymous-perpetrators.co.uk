@@ -13,8 +13,23 @@ export default function Document() {
                     rel="stylesheet"
                     href="https://use.typekit.net/ufc3flv.css"
                 />
+                <style>
+                    
+                </style>
             </Head>
             <body>
+            <div className="background">
+                <div className="sky-gradient">
+                    <div className="sun-sphere">
+                    </div>
+                </div>
+                <div className="ground-plane">
+                    <div className="vapor-grid-glow">
+                    </div>
+                    <div className="vapor-grid">
+                    </div>
+                </div>
+            </div>
             <Main/>
             <NextScript/>
             {

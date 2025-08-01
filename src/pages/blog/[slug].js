@@ -13,11 +13,7 @@ import Header from '../../components/organisms/Header/Header';
 export default function BlogTemplate({frontmatter, markdownBody}) {
 
     return (
-        <Page
-            backgroundImage={'url(/vapor_grid.png)'}
-            backgroundPositionX={'center'}
-            backgroundSize={'cover'}
-        >
+        <Page>
             <Header pageTitle={frontmatter.title}/>
             <div
                 style={{

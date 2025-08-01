@@ -5,34 +5,36 @@ import TrackCard from 'components/organisms/TrackCard/TrackCard';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
 
-const TracksPage = ({trackItemData}) => {
+const TracksPage = ({
+    trackItemData
+}) => {
     const backgroundColor = trackItemData['Track Page Colour'] !== '' ? trackItemData['Track Page Colour'] : undefined;
     const backgroundImage = trackItemData['Track Page Image'] !== '' ? `url(${trackItemData['Track Page Image']})` : undefined;
 
     return (<Page
-            backgroundColor={backgroundColor}
-            backgroundImage={backgroundImage}
-            backgroundSize={'100vh'}
+        backgroundColor={backgroundColor}
+        backgroundImage={backgroundImage}
+        backgroundSize={'100vh'}
+    >
+        <Header pageTitle={trackItemData['Title']}/>
+        <div
+            style={{
+                flexBasis: '50%',
+            }}
         >
-            <Header pageTitle={trackItemData['Title']}/>
-            <div
-                style={{
-                    flexBasis: '50%',
-                }}
-            >
-                <TrackCard
-                    key={trackItemData['Stub']}
-                    trackItemData={trackItemData}
-                />
-            </div>
-        </Page>);
+            <TrackCard
+                key={trackItemData['Stub']}
+                trackItemData={trackItemData}
+            />
+        </div>
+    </Page>);
 };
 
 export default TracksPage;
 
 export async function getStaticPaths() {
     const paths = data.map(item => {
-        return {params: {trackname: item['Stub']}}
+        return {params: {trackname: item['Stub']}};
     });
     return {paths: paths, fallback: false};
 }

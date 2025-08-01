@@ -67,3 +67,65 @@ h1{
 p{
     line-height: 1.25;
 }
+
+.background * {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    z-index: -1;
+    background-color: black;
+    perspective: 100px;
+    perspective-origin: center;
+    overflow: hidden;
+}
+
+.ground-plane {
+    width: 1000vw;
+    height: 100vh;
+    transform-origin: center;
+    transform: translateY(10vh) translateZ(0vh) translateX(-500vw) rotateX(90deg);
+}
+
+.vapor-grid,
+.vapor-grid-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.vapor-grid {
+    width: inherit;
+    height: inherit;
+    background: repeating-linear-gradient(to right, transparent 0px, transparent 48px, green 49px, green 50px), repeating-linear-gradient(to bottom, green 0px, transparent 1px, transparent 48px, green 49px, green 50px);
+}
+
+.vapor-grid-glow {
+    width: inherit;
+    height: inherit;
+    background: repeating-linear-gradient(to right, rgba(0, 128, 0, 0.5) 0px, transparent 6px, transparent 43px, rgba(0, 128, 0, 0.5) 49px, rgba(0, 128, 0, 0.5) 50px), repeating-linear-gradient(to bottom, rgba(0, 128, 0, 0.5) 0px, transparent 6px, transparent 43px, rgba(0, 128, 0, 0.5) 49px, rgba(0, 128, 0, 0.5) 50px);
+}
+
+.sky-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 51.5vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #153cb2 0%, #f62c95 87%, #f62c95 100%);
+}
+
+.sun-sphere {
+    position: absolute;
+    left: calc(50% - 40vw);
+    top: calc(50% - 20vw);
+    width: 80vw;
+    height: 80vw;
+    background-image: radial-gradient(#6a06b1 0%, #f9ab53 65%, #f9ab53 90%, #f9ab53 100%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 3px #f62c95, 0px 0px 30px 10px rgba(255, 255, 255, 0.6), 0px 0px 150px 15px #f62c95, 0px 0px 150px 30px rgba(255, 255, 255, 0.3), 0px 0px 300px 40px rgba(255, 255, 255, 0.5), 0px 0px 550px 50px #f62c95, 0px 0px 700px 50px rgba(255, 255, 255, 0.2), 0px 0px 900px 200px white, 0px 0px 1000px 50px rgba(255, 255, 255, 0.4), 0px 0px 2000px 100px rgba(255, 255, 255, 0.1), 0px 0px 2000px 50px white;
+}

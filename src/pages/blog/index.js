@@ -10,12 +10,7 @@ import Header from 'components/organisms/Header/Header';
 const BlogList = ({allBlogs}) => {
 
     return (
-        <Page
-            backgroundColor={'black'}
-            backgroundImage={'url(/vapor_grid.png)'}
-            backgroundSize="cover"
-            backgroundPositionX="center"
-        >
+        <Page>
             <Header pageTitle="blog" />
             <div
                 style={{
