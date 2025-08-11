@@ -1,37 +1,40 @@
 {
-  "name": "anonymousperpetrators.co.uk",
-  "version": "1.0.0",
-  "description": "Website",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "cypress:open": "cypress open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nigeljohnwade/anonymousperpetrators.co.uk.git"
-  },
-  "author": "Nigel Wade",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk/issues"
-  },
-  "homepage": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk#readme",
-  "devDependencies": {
-    "cypress": "^11.2.0",
-    "eslint": "^8.52.0",
-    "eslint-config-next": "^13.5.6"
-  },
-  "dependencies": {
-    "glob": "^11.0.3",
-    "gray-matter": "^4.0.3",
-    "next": "^14.2.20",
-    "raw-loader": "^4.0.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-markdown": "^10.1.0"
-  }
+    "name": "anonymousperpetrators.co.uk",
+    "version": "1.0.0",
+    "description": "Website",
+    "main": "index.js",
+    "engines": {
+        "node": ">=22.0"
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "cypress:open": "cypress open"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nigeljohnwade/anonymousperpetrators.co.uk.git"
+    },
+    "author": "Nigel Wade",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk/issues"
+    },
+    "homepage": "https://github.com/nigeljohnwade/anonymousperpetrators.co.uk#readme",
+    "devDependencies": {
+        "cypress": "^11.2.0",
+        "eslint": "^8.52.0",
+        "eslint-config-next": "^13.5.6"
+    },
+    "dependencies": {
+        "glob": "^11.0.3",
+        "gray-matter": "^4.0.3",
+        "next": "^14.2.20",
+        "raw-loader": "^4.0.2",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-markdown": "^10.1.0"
+    }
 }
