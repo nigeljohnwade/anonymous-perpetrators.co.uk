@@ -5,11 +5,7 @@ import Typography from '../components/atoms/Typography/Typography';
 
 const HomePage = () => {
     return (
-        <Page
-            backgroundImage={'url(/vapor_grid.webp)'}
-            backgroundPositionX={'center'}
-            backgroundSize={'cover'}
-        >
+        <Page>
             <Header pageTitle="About"/>
             <div style={{
                 padding: '1rem',

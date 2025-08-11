@@ -5,11 +5,7 @@ import CardDeck from 'components/molecules/CardDeck/CardDeck';
 
 const HomePage = () => {
     return (
-        <Page
-            backgroundImage={'url(/vapor_grid.webp)'}
-            backgroundPositionX={'center'}
-            backgroundSize={'cover'}
-        >
+        <Page>
             <Header pageTitle="Anonymous Perpetrators"/>
             <CardDeck additionalStyles={{'flexDirection': 'flex-end'}}>
                 <a

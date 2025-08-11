@@ -3,7 +3,7 @@ import styles from './Page.module.css';
 
 const Page = ({
     backgroundAttachment = 'fixed',
-    backgroundColor = 'hsl(0deg 0% 0%)',
+    backgroundColor = 'transparent',
     backgroundImage = null,
     backgroundSize = '100%',
     backgroundPositionX= 'left',
