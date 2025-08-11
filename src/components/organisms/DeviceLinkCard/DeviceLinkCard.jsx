@@ -19,6 +19,7 @@ const DeviceLinkCard = ({device}) => {
                 </Typography>
             </CardHeader>
             <Image
+                loading="eager"
                 alt={device['Device Name']}
                 className={styles['card-image']}
                 src={`/${device['Device Main Image']}`}
