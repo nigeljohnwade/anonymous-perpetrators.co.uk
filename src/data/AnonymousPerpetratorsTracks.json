@@ -215,54 +215,7 @@
         "Track Page Image": "/block_element_modifier.png",
         "Title": "Block Element Modifier"
     },
-    {
-        "Stub": "slapshot",
-        "Devices": "Software:\\nChord Sequencer\\nDrum Sequencer\\nPulsar\\nRV700 MkII\\nSweeper\\nKong\\nViking VK-1\\nHumana\\nPolysix\\nEuropa\\nAnimus Shimmerverb",
-        "Description": "Entirely software, learning how to use the Chord Sequencer player device in Reason as I haven't really got to grips with that device. Decided to use a 909 kit in Kong rather than my go to 707 sounds for a change as well.",
-        "File Name": "Block Element Modifier.wav",
-        "Track Id": "2109084144",
-        "Track Link": "https://soundcloud.com/anonymousperpetrators/slapshot",
-        "Track Image": "block_element_modifier.png",
-        "Track Page Colour": "hsl(61, 23%, 35%)",
-        "Track Page Image": "/block_element_modifier.png",
-        "Title": "Slapshot"
-    },
-    {
-        "Stub": "rule-of-thirds",
-        "Devices": "Software:\\nDrum Sequencer\\nRV700 MkII\\nSweeper\\nPulsar\\nKong\\nThe Legend HZ",
-        "Description": "Entirely software, The Legend (Hans Zimmer edition) is different to the original rack extension so it was available to trial. I loved the original but it was slightly out of my price range. I made this track with it during the trial and bounced the audio down before the trial ran out. ",
-        "File Name": "Block Element Modifier.wav",
-        "Track Id": "2097181239",
-        "Track Link": "https://soundcloud.com/anonymousperpetrators/rule-of-thirds",
-        "Track Image": "block_element_modifier.png",
-        "Track Page Colour": "hsl(61, 23%, 35%)",
-        "Track Page Image": "/rule_of_thirds.jpg",
-        "Title": "Rule Of Thirds"
-    },
-    {
-        "Stub": "six-and-two-threes",
-        "Devices": "Software:\\nDrum Sequencer\\nRV700 MkII\\nSweeper\\nPulsar\\nJackbox 707\\nPolytone\\nPolysix\\nABL 3",
-        "Description": "Wanted to play with a variation of the disco bass from 'Ooh, La, La, La' which I am sure is similar to a great many others. I do not use triplets very much at all and it turned out to be a lot of fun.",
-        "File Name": "Block Element Modifier.wav",
-        "Track Id": "2113741278",
-        "Track Link": "https://soundcloud.com/anonymousperpetrators/six-and-two-threes",
-        "Track Image": "block_element_modifier.png",
-        "Track Page Colour": "hsl(61, 23%, 35%)",
-        "Track Page Image": "/block_element_modifier.png",
-        "Title": "Six And Two Threes"
-    },
-    {
-        "Stub": "training-montage",
-        "Devices": "Software:\\nDrum Sequencer\\nRV700 MkII\\nSweeper\\nPulsar\\nJackbox 707\\nPolytone\\nPolysix\\nABL 3",
-        "Description": "Not sure where this came from or why it ended up being 'Training Montage'.",
-        "File Name": "Block Element Modifier.wav",
-        "Track Id": "2095227177",
-        "Track Link": "https://soundcloud.com/anonymousperpetrators/training-montage",
-        "Track Image": "block_element_modifier.png",
-        "Track Page Colour": "hsl(61, 23%, 0%)",
-        "Track Page Image": "/block_element_modifier.png",
-        "Title": "Training Montage"
-    },
+
     {
         "Stub": "the-queen-of-fucking-everything",
         "Devices": "Software:\\nDrum Sequencer\\nRV700 MkII\\nSweeper\\nPulsar\\nJackbox 707\\nPolytone\\nPolysix\\nABL 3",
