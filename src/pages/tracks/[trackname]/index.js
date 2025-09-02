@@ -1,6 +1,5 @@
 import React from 'react';
 
-import data from 'data/AnonymousPerpetratorsTracks.json';
 import TrackCard from 'components/organisms/TrackCard/TrackCard';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
@@ -34,7 +33,6 @@ const TracksPage = ({
             />
         </div>
     </Page>);
-    // return <p>Track</p>;
 };
 
 export default TracksPage;
@@ -45,7 +43,7 @@ export async function getStaticPaths() {
 
     // converting the file names to their slugs
     // this is janky as fuck, need to look at this again
-    const blogSlugs = blogs.map((file) => {
+    const tracknames = blogs.map((file) => {
             if (file.indexOf('/') > -1) {
                 return file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim();
             } else if (file.indexOf('\\') > -1) {
@@ -55,8 +53,8 @@ export async function getStaticPaths() {
     );
 
     // creating a path for each of the `slug` parameter
-    const paths = blogSlugs.map((slug) => {
-        return {params: {trackname: slug}};
+    const paths = tracknames.map((track) => {
+        return {params: {trackname: track}};
     });
 
     return {
