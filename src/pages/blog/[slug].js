@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';

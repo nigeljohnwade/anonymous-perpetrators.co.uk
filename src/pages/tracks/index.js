@@ -1,6 +1,5 @@
 import React from 'react';
 
-import data from 'data/AnonymousPerpetratorsTracks.json';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
 import TrackLinkCard from 'components/organisms/TrackLinkCard/TrackLinkCard';
@@ -16,7 +15,6 @@ const TracksPage = ({allTracks}) => {
                 {
                     allTracks && allTracks.map(track => {
                         return (
-                            // <p>{track.frontmatter.title}</p>
                             <TrackLinkCard
                                 key={track.slug}
                                 track={track}
