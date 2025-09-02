@@ -16,7 +16,7 @@ function TrackCard({
                     artistLink="https://soundcloud.com/anonymousperpetrators"
                     artistName="anonymousperpetrators"
                     trackId={trackItemData.frontmatter.trackId}
-                    trackLink={trackItemData['Track Link']}
+                    trackLink={trackItemData.frontmatter.trackLink}
                     trackName={trackItemData.frontmatter.title}
                 />
             </CardHeader>

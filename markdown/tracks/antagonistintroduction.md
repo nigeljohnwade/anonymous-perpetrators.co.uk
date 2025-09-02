@@ -3,7 +3,7 @@ title: "Antagonist Introduction"
 category: "Underdog Movie"
 image: "/block_element_modifier.png"
 trackPageColour: "hsl(61, 23%, 35%)"
-"trackId": "2109084144"
+trackId: "2109084144"
 ---
 
 Entirely software, learning how to use the Chord Sequencer player device in Reason as I haven't really got to grips with that device. 

@@ -1,10 +1,11 @@
 ---
-"trackId": "924599011"
-"Track Link": "https://soundcloud.com/anonymousperpetrators/turbulent-berry"
-"trackPageColour": "hsl(333deg 83% 15%)"
-"image": "/turbulent_berry.png"
-"title": "Turbulent Berry"
+trackId: "924599011"
+trackLink: "https://soundcloud.com/anonymousperpetrators/turbulent-berry"
+trackPageColour: "hsl(333deg 83% 15%)"
+image: "/turbulent_berry.png"
+title: "Turbulent Berry"
 ---
+
 This was the first track I recorded using the Korg Volca Beats. 
 After buying it I had played around with it, taking it on buses and trains and enjoying playing around with beats on the move without having to think about fitting them to anything else. 
 I recorded about 15 minutes of performance with the Korg Volca Beats as a base for the track.
