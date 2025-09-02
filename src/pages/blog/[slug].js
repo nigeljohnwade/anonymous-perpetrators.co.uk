@@ -48,7 +48,7 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
 
 export async function getStaticPaths() {
     // getting all .md files from the posts directory
-    const blogs = await glob.sync(`blog/**/*.md`);
+    const blogs = await glob.sync(`markdown/apblog/*.md`);
 
     // converting the file names to their slugs
     // this is janky as fuck, need to look at this again

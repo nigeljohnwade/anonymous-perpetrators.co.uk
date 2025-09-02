@@ -10,36 +10,38 @@ import matter from 'gray-matter';
 const TracksPage = ({
     frontmatter,
     markdownBody,
-    content,
 }) => {
-    // const backgroundColor = frontmatter.trackPageColour !== '' ? frontmatter.trackPageColour : undefined;
-    // const backgroundImage = frontmatter.image !== '' ? `url(${frontmatter.image})` : undefined;
-    //
-    // return (<Page
-    //     backgroundColor={backgroundColor}
-    //     backgroundImage={backgroundImage}
-    //     backgroundSize={'100vh'}
-    // >
-    //     <Header pageTitle={frontmatter.title} />
-    //     <div
-    //         style={{
-    //             flexBasis: '50%',
-    //         }}
-    //     >
-    //         {/*<TrackCard*/}
-    //         {/*    key={frontmatter.slug}*/}
-    //         {/*    trackItemData={content}*/}
-    //         {/*/>*/}
-    //     </div>
-    // </Page>);
-    return <p>Track</p>
+    const backgroundColor = frontmatter.trackPageColour !== '' ? frontmatter.trackPageColour : undefined;
+    const backgroundImage = frontmatter.image !== '' ? `url(${frontmatter.image})` : undefined;
+
+    return (<Page
+        backgroundColor={backgroundColor}
+        backgroundImage={backgroundImage}
+        backgroundSize={'100vh'}
+    >
+        <Header pageTitle={frontmatter.title} />
+        <div
+            style={{
+                flexBasis: '50%',
+            }}
+        >
+            <TrackCard
+                key={frontmatter.slug}
+                trackItemData={{
+                    frontmatter: frontmatter,
+                    markdownBody: markdownBody,
+                }}
+            />
+        </div>
+    </Page>);
+    // return <p>Track</p>;
 };
 
 export default TracksPage;
 
 export async function getStaticPaths() {
     // getting all .md files from the posts directory
-    const blogs = await glob.sync(`tracks/**/*.md`);
+    const blogs = await glob.sync(`markdown/tracks/*.md`);
 
     // converting the file names to their slugs
     // this is janky as fuck, need to look at this again
@@ -54,7 +56,7 @@ export async function getStaticPaths() {
 
     // creating a path for each of the `slug` parameter
     const paths = blogSlugs.map((slug) => {
-        return {params: {slug: slug}};
+        return {params: {trackname: slug}};
     });
 
     return {
