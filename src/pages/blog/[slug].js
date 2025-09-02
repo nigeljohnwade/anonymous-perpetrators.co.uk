@@ -78,7 +78,7 @@ export async function getStaticProps(context) {
 
     // retrieving the Markdown file associated to the slug
     // and reading its data
-    const content = await import(`../../../blog/apblog/${slug}.md`)
+    const content = await import(`../../../markdown/apblog/${slug}.md`)
         .then((data) => {
             return matter(data.default);
         });

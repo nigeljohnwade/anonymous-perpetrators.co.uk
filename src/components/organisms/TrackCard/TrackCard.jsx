@@ -14,9 +14,9 @@ function TrackCard({
                 <SoundCloudEmbed
                     artistLink="https://soundcloud.com/anonymousperpetrators"
                     artistName="anonymousperpetrators"
-                    trackId={trackItemData['Track Id']}
+                    trackId={trackItemData.frontmatter.trackId}
                     trackLink={trackItemData['Track Link']}
-                    trackName={trackItemData['Title']}
+                    trackName={trackItemData.frontmatter.title}
                 />
             </CardHeader>
             <div

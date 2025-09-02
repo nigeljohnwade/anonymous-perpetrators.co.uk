@@ -44,7 +44,8 @@ const BlogList = ({allBlogs}) => {
 export default BlogList;
 
 export async function getStaticProps() {
-    const webpackContext = require.context('../../../blog', true, /\.md$/);
+    //https://webpack.js.org/guides/dependency-management/#requirecontext
+    const webpackContext = require.context('../../../markdown/apblog', true, /\.md$/);
     // the list of file names contained
     // inside the "posts" directory
     const keys = webpackContext.keys();

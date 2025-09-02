@@ -4,48 +4,81 @@ import data from 'data/AnonymousPerpetratorsTracks.json';
 import TrackCard from 'components/organisms/TrackCard/TrackCard';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
+import { glob } from 'glob';
+import matter from 'gray-matter';
 
 const TracksPage = ({
-    trackItemData
+    frontmatter,
+    markdownBody,
+    content,
 }) => {
-    const backgroundColor = trackItemData['Track Page Colour'] !== '' ? trackItemData['Track Page Colour'] : undefined;
-    const backgroundImage = trackItemData['Track Page Image'] !== '' ? `url(${trackItemData['Track Page Image']})` : undefined;
-
-    return (<Page
-        backgroundColor={backgroundColor}
-        backgroundImage={backgroundImage}
-        backgroundSize={'100vh'}
-    >
-        <Header pageTitle={trackItemData['Title']}/>
-        <div
-            style={{
-                flexBasis: '50%',
-            }}
-        >
-            <TrackCard
-                key={trackItemData['Stub']}
-                trackItemData={trackItemData}
-            />
-        </div>
-    </Page>);
+    // const backgroundColor = frontmatter.trackPageColour !== '' ? frontmatter.trackPageColour : undefined;
+    // const backgroundImage = frontmatter.image !== '' ? `url(${frontmatter.image})` : undefined;
+    //
+    // return (<Page
+    //     backgroundColor={backgroundColor}
+    //     backgroundImage={backgroundImage}
+    //     backgroundSize={'100vh'}
+    // >
+    //     <Header pageTitle={frontmatter.title} />
+    //     <div
+    //         style={{
+    //             flexBasis: '50%',
+    //         }}
+    //     >
+    //         {/*<TrackCard*/}
+    //         {/*    key={frontmatter.slug}*/}
+    //         {/*    trackItemData={content}*/}
+    //         {/*/>*/}
+    //     </div>
+    // </Page>);
+    return <p>Track</p>
 };
 
 export default TracksPage;
 
 export async function getStaticPaths() {
-    const paths = data.map(item => {
-        return {params: {trackname: item['Stub']}};
+    // getting all .md files from the posts directory
+    const blogs = await glob.sync(`tracks/**/*.md`);
+
+    // converting the file names to their slugs
+    // this is janky as fuck, need to look at this again
+    const blogSlugs = blogs.map((file) => {
+            if (file.indexOf('/') > -1) {
+                return file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim();
+            } else if (file.indexOf('\\') > -1) {
+                return file.split('\\')[2].replace(/ /g, ' - ').slice(0, -3).trim();
+            }
+        }
+    );
+
+    // creating a path for each of the `slug` parameter
+    const paths = blogSlugs.map((slug) => {
+        return {params: {slug: slug}};
     });
-    return {paths: paths, fallback: false};
+
+    return {
+        paths,
+        fallback: false,
+    };
 }
 
-export async function getStaticProps({params}) {
-    const trackItemData = data.filter(item => {
-        return item['Stub'] === params.trackname;
-    })[0];
+export async function getStaticProps(context) {
+    // extracting the slug from the context
+    const slug = context.params.trackname;
+
+    // retrieving the Markdown file associated to the slug
+    // and reading its data
+    const content = await import(`../../../../markdown/tracks/${slug}.md`)
+        .then((data) => {
+            return matter(data.default);
+        });
+
+    console.log(content);
     return {
         props: {
-            trackItemData: trackItemData
-        }
+            frontmatter: content.data,
+            markdownBody: content.content,
+        },
     };
 }
