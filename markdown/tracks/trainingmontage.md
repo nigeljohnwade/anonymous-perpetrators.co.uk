@@ -10,7 +10,6 @@ Not sure where this came from or why it ended up being 'Training Montage'
 ## Software
 - Reason 13 
 ### Devices
-Software:
 - Drum Sequencer
 - RV700 MkII 
 - Sweeper

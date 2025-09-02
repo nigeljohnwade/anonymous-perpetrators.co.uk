@@ -11,7 +11,6 @@ Entirely software, The Legend (Hans Zimmer edition) is different to the original
 ## Software
 - Reason 13 
 ### Devices
-Software:
 - Drum Sequencer
 - RV700 MkII
 - Sweeper

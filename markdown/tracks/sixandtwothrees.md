@@ -11,7 +11,6 @@ Wanted to play with a variation of the disco bass from 'Ooh, La, La, La' which I
 ## Software
 - Reason 13 
 ### Devices
-Software:
 - Drum Sequencer
 - RV700 MkII
 - Sweeper
