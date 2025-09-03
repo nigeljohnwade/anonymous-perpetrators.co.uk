@@ -53,6 +53,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    font-weight: 300;
 }
 
 h1{
@@ -60,6 +61,13 @@ h1{
     text-shadow: var(--text-shadow);
 }
 
+h2, h3, h4, h5, h6{
+    font-weight: 500;
+}
+
+b, bold{
+    font-weight: 500;
+}
 .longform-text{
     max-width: var(--longform-text);
 }
