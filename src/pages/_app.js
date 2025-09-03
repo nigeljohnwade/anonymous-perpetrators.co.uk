@@ -14,7 +14,7 @@ export default function MyApp({Component, pageProps}) {
                     name="viewport"
                     content="width=device-width, height=device-height, initial-scale=1, minimum-scale=0.1, maximum-scale=10, user-scalable=yes"
                 />
-                <title>{process.env.NODE_ENV === 'development' ? 'Local - ' : ''}Anonymous Perpetrators</title>
+                <title>{process.env.NODE_ENV === 'development' ? 'Local - Anonymous Perpetrators' : 'Anonymous Perpetrators'}</title>
             </Head>
             <Component {...pageProps} />
         </>

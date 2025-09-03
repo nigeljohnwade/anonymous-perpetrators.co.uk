@@ -39,11 +39,11 @@ export default TracksPage;
 
 export async function getStaticPaths() {
     // getting all .md files from the posts directory
-    const blogs = await glob.sync(`markdown/tracks/*.md`);
+    const tracks = await glob.sync(`markdown/tracks/*.md`);
 
     // converting the file names to their slugs
     // this is janky as fuck, need to look at this again
-    const tracknames = blogs.map((file) => {
+    const tracknames = tracks.map((file) => {
             if (file.indexOf('/') > -1) {
                 return file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim();
             } else if (file.indexOf('\\') > -1) {
@@ -65,16 +65,15 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
     // extracting the slug from the context
-    const slug = context.params.trackname;
+    const trackname = context.params.trackname;
 
     // retrieving the Markdown file associated to the slug
     // and reading its data
-    const content = await import(`../../../../markdown/tracks/${slug}.md`)
+    const content = await import(`../../../../markdown/tracks/${trackname}.md`)
         .then((data) => {
             return matter(data.default);
         });
 
-    console.log(content);
     return {
         props: {
             frontmatter: content.data,
