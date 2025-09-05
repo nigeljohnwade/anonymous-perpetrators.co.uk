@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
@@ -48,7 +47,7 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
 
 export async function getStaticPaths() {
     // getting all .md files from the posts directory
-    const blogs = await glob.sync(`blog/**/*.md`);
+    const blogs = await glob.sync(`markdown/apblog/*.md`);
 
     // converting the file names to their slugs
     // this is janky as fuck, need to look at this again
@@ -78,7 +77,7 @@ export async function getStaticProps(context) {
 
     // retrieving the Markdown file associated to the slug
     // and reading its data
-    const content = await import(`../../../blog/apblog/${slug}.md`)
+    const content = await import(`../../../markdown/apblog/${slug}.md`)
         .then((data) => {
             return matter(data.default);
         });

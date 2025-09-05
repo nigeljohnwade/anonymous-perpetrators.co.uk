@@ -1,30 +1,35 @@
 import React from 'react';
 
-import data from 'data/AnonymousPerpetratorsTracks.json';
 import TrackCard from 'components/organisms/TrackCard/TrackCard';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
+import { glob } from 'glob';
+import matter from 'gray-matter';
 
 const TracksPage = ({
-    trackItemData
+    frontmatter,
+    markdownBody,
 }) => {
-    const backgroundColor = trackItemData['Track Page Colour'] !== '' ? trackItemData['Track Page Colour'] : undefined;
-    const backgroundImage = trackItemData['Track Page Image'] !== '' ? `url(${trackItemData['Track Page Image']})` : undefined;
+    const backgroundColor = frontmatter.trackPageColour !== '' ? frontmatter.trackPageColour : undefined;
+    const backgroundImage = frontmatter.image !== '' ? `url(${frontmatter.image})` : undefined;
 
     return (<Page
         backgroundColor={backgroundColor}
         backgroundImage={backgroundImage}
         backgroundSize={'100vh'}
     >
-        <Header pageTitle={trackItemData['Title']}/>
+        <Header pageTitle={frontmatter.title} />
         <div
             style={{
                 flexBasis: '50%',
             }}
         >
             <TrackCard
-                key={trackItemData['Stub']}
-                trackItemData={trackItemData}
+                key={frontmatter.slug}
+                trackItemData={{
+                    frontmatter: frontmatter,
+                    markdownBody: markdownBody,
+                }}
             />
         </div>
     </Page>);
@@ -33,19 +38,46 @@ const TracksPage = ({
 export default TracksPage;
 
 export async function getStaticPaths() {
-    const paths = data.map(item => {
-        return {params: {trackname: item['Stub']}};
+    // getting all .md files from the posts directory
+    const tracks = await glob.sync(`markdown/tracks/*.md`);
+
+    // converting the file names to their slugs
+    // this is janky as fuck, need to look at this again
+    const tracknames = tracks.map((file) => {
+            if (file.indexOf('/') > -1) {
+                return file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim();
+            } else if (file.indexOf('\\') > -1) {
+                return file.split('\\')[2].replace(/ /g, ' - ').slice(0, -3).trim();
+            }
+        }
+    );
+
+    // creating a path for each of the `slug` parameter
+    const paths = tracknames.map((track) => {
+        return {params: {trackname: track}};
     });
-    return {paths: paths, fallback: false};
+
+    return {
+        paths,
+        fallback: false,
+    };
 }
 
-export async function getStaticProps({params}) {
-    const trackItemData = data.filter(item => {
-        return item['Stub'] === params.trackname;
-    })[0];
+export async function getStaticProps(context) {
+    // extracting the slug from the context
+    const trackname = context.params.trackname;
+
+    // retrieving the Markdown file associated to the slug
+    // and reading its data
+    const content = await import(`../../../../markdown/tracks/${trackname}.md`)
+        .then((data) => {
+            return matter(data.default);
+        });
+
     return {
         props: {
-            trackItemData: trackItemData
-        }
+            frontmatter: content.data,
+            markdownBody: content.content,
+        },
     };
 }

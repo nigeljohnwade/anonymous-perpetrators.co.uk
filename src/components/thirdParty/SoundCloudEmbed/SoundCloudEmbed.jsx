@@ -20,8 +20,7 @@ const SoundCloudEmbed = ({
                 allow="autoplay"
                 src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackId}&color=%2328728f&inverse=${Boolean(theme === 'dark')}&auto_play=false&show_user=true`}
             />
-            <div className={styles['sound-cloud-embed-wrapper']}
-            >
+            <div className={styles['sound-cloud-embed-wrapper']}>
                 <a
                     className={styles['sound-cloud-embed-link']}
                     href={artistLink}

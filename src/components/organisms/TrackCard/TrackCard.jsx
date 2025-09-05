@@ -1,9 +1,10 @@
 import React from 'react';
-import Typography from 'components/atoms/Typography/Typography';
+
 import SoundCloudEmbed from 'components/thirdParty/SoundCloudEmbed/SoundCloudEmbed';
 import Card from 'components/molecules/Card/Card';
 import CardHeader from 'components/molecules/CardHeader/CardHeader';
 import styles from './TrackCard.module.css';
+import ReactMarkdown from 'react-markdown';
 
 function TrackCard({
     trackItemData,
@@ -14,39 +15,21 @@ function TrackCard({
                 <SoundCloudEmbed
                     artistLink="https://soundcloud.com/anonymousperpetrators"
                     artistName="anonymousperpetrators"
-                    trackId={trackItemData['Track Id']}
-                    trackLink={trackItemData['Track Link']}
-                    trackName={trackItemData['Title']}
+                    trackId={trackItemData.frontmatter.trackId}
+                    trackLink={trackItemData.frontmatter.trackLink}
+                    trackName={trackItemData.frontmatter.title}
                 />
             </CardHeader>
             <div
                 style={{
                     padding: '1rem'
                 }}
+                className="tk-itc-avant-garde-gothic-pro"
             >
                 <div className={styles.block}>
-                    <Typography element="h3">Devices</Typography>
-                    {trackItemData['Devices'] && trackItemData['Devices'].split('\\n').map(p => (
-                            <Typography
-                                element={p !== 'Hardware:' && p !== 'Software:' ? 'p' : 'h4'}
-                                modifier={p !== 'Hardware:' && p !== 'Software:' ? 'indent' : null}
-                                key={p.toLowerCase().replace(' ', '_')}
-                            >
-                                {p}
-                            </Typography>
-                        )
-                    )}
-                </div>
-                <div className={styles.block}>
-                    {trackItemData['Description'].split('\\n').map((p, i) => (
-                            <Typography
-                                key={i}
-                                element="p"
-                            >
-                                {p}
-                            </Typography>
-                        )
-                    )}
+                    <ReactMarkdown>
+                        {trackItemData.markdownBody}
+                    </ReactMarkdown>
                 </div>
             </div>
         </Card>

@@ -13,16 +13,16 @@ const TrackLinkCard = ({ track }) => {
                     element="a"
                     variant="link"
                     modifier="card-title-link"
-                    href={`/tracks/${track.Stub}`}
+                    href={`/tracks/${track.slug}`}
                 >
-                    {track.Title}
+                    {track.frontmatter.title}
                 </Typography>
             </CardHeader>
             <Image
                 alt=""
                 fill
                 sizes="(min-width: 1280px) 640px, (min-width: 1920px) 960px, 480px"
-                src={`${track["Track Page Image"]}`}
+                src={`${track.frontmatter.image}`}
                 className={styles['card-image']}
             />
         </Card>
