@@ -1,8 +1,8 @@
 ---
-trackId: "1744077450"
-trackPageColour: "hsl(61, 23%, 35%)"
-image: "/block_element_modifier.png"
-title: "Block Element Modifier"
+trackId: "772316947"
+trackPageColour: "hsl(0deg 0% 0%)"
+image: "/my_frequency_is.png"
+title: "My Frequency Is"
 ---
 
 ## Hardware
@@ -14,7 +14,3 @@ title: "Block Element Modifier"
 ## Software
 
 - Reason 13
-
-### Devices
-
-- Quadelectra Jackbox 7R-707
