@@ -1,8 +1,9 @@
 ---
 trackId: "1167367099"
-trackPageColour: "hsl(103deg 100% 4%)"
-image: "/why_the_soft_focus.png"
-title: "Why The Soft Focus"
+trackPageColour: hsl(103deg 100% 4%)
+image: /why_the_soft_focus.png
+title: Why The Soft Focus
+trackLink: https://soundcloud.com/anonymousperpetrators/why-the-soft-focus
 ---
 
 ## Hardware

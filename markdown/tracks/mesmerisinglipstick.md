@@ -1,8 +1,9 @@
 ---
-"trackId": "958398850"
-"trackPageColour": "hsl(343deg 81% 22%)"
-"image": "/mesmerising_lipstick.png"
-"title": "Mesmerising Lipstick"
+trackId: "958398850"
+trackPageColour: hsl(343deg 81% 22%)
+image: /mesmerising_lipstick.png
+title: Mesmerising Lipstick
+trackLink: https://soundcloud.com/anonymousperpetrators/mesmerising-lipstick
 ---
 
 Roland 808 40th anniversary competition entry that never got entered.

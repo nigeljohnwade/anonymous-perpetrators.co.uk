@@ -1,8 +1,9 @@
 ---
 trackId: "1339316104"
-trackPageColour: "black"
-image: "/shawshank_finch_fugue.png"
-title: "Shawshank/Finch Fugue"
+trackPageColour: black
+image: /shawshank_finch_fugue.png
+title: Shawshank/Finch Fugue
+trackLink: https://soundcloud.com/anonymousperpetrators/shawshankfinch-fugue
 ---
 
 Something laid back
