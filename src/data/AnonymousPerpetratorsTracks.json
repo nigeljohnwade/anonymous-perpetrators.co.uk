@@ -36,18 +36,6 @@
         "title": "Insufficient Vestiges Of Dread"
     },
     {
-        "Stub": "shawshank-finch-fugue",
-        "Devices": "Roland TB-03 Boutique, Moog Mavis, Software",
-        "Description": "Description",
-        "File Name": "Shawshank/Finch Fugue.wav",
-        "trackId": "1339316104",
-        "Track Link": "https://soundcloud.com/anonymousperpetrators/shawshankfinch-fugue",
-        "Track Image": "shawshank_finch_fugue.png",
-        "trackPageColour": "black",
-        "image": "/shawshank_finch_fugue.png",
-        "title": "Shawshank/Finch Fugue"
-    },
-    {
         "Stub": "infusive-blurple",
         "Devices": "Korg Volca Beats, Roland TB-3",
         "Description": "Description",
@@ -94,17 +82,5 @@
         "trackPageColour": "hsl(1deg 100% 5%)",
         "image": "/spanking_mahogany.png",
         "title": "Spanking Mahogany"
-    },
-    {
-        "Stub": "it-never-swam-around-much-so-what-was-the-point",
-        "Devices": null,
-        "Description": "Made in Reason. Basic idea was a very short single note pattern 12 bars long but it has been fleshed out with the help some of the player devices in Reason (Scales & Chords, Dual Arpeggiator). Sounds come from the Blamsoft VK-2 Viking, Korg Polysix, Skrock Orbis Wavetable, and the '626 from Mars' patch/samples by Samples from Mars loaded into an NN-XT.",
-        "File Name": "It Never Swam Around Much So What Was The Point",
-        "trackId": "1446176629",
-        "Track Link": "https://soundcloud.com/anonymousperpetrators/it-never-swam-around-much-so-what-was-the-point",
-        "Track Image": "it never swam.jpg",
-        "trackPageColour": "hsl(61, 23%, 35%)",
-        "image": "/it never swam.jpg",
-        "title": "It Never Swam Around Much So What Was The Point"
     }
 ]
