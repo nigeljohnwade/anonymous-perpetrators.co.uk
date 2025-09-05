@@ -1,7 +1,7 @@
 ---
-trackId: "1339316104",
-trackPageColour: "black",
-image: "/shawshank_finch_fugue.png",
+trackId: "1339316104"
+trackPageColour: "black"
+image: "/shawshank_finch_fugue.png"
 title: "Shawshank/Finch Fugue"
 ---
 
