@@ -4,7 +4,9 @@
     z-index: 9;
     margin: 0 -2rem;
     padding: 1rem 2rem 2rem 2rem;
-    background-image: linear-gradient(180deg, black 0%, hsl(0deg 0 0 / 50%) 35%, hsl(0deg 0 0 / 10%) 75%, transparent);
+    background:
+        linear-gradient(180deg, hsl(0deg 0 0 / 75%) 0%, hsl(0deg 0 0 / 25%) 36%,hsl(0deg 0 0 / 5%) 66%, transparent)
+        ,linear-gradient(180deg, hsl(0deg 0 0 / 50%) 0%, hsl(0deg 0 0 / 20%) 25%, transparent)
 }
 
 .header h1{
