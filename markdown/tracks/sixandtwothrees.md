@@ -19,5 +19,6 @@ Wanted to play with a variation of the disco bass from 'Ooh, La, La, La' which I
 - Jackbox 707
 - Polytone
 - Polysix
-- ABL 3
+- ABL 2
+- LPCV Free
 

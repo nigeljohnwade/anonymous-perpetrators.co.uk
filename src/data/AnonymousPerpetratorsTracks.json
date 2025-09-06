@@ -24,18 +24,6 @@
         "title": "Human Eggshell"
     },
     {
-        "Stub": "insufficient-vestiges-of-dread",
-        "Devices": "Hardware:\\nMoog Werkstatt-01 & CV Expander\\nArturia Keystep Pro\\nSoftware:\\nReason Studios Redrum\\nReason Studios Subtractor\\nReason Studios Matrix\\nAudiorealism abl2\\nRob Papen Predator RE\\n",
-        "Description": "Generally whenever I am recording hardware devices that are CV & gate oriented I will use the Arturia Keystep Pro to sync up to Reason. Patterns programmed on the Arturia Keystep Pro will drive the CV, gate, and curve inputs of the device and the audio of a performance is captured. The Moog Werkstatt-01 & CV Expander on this is driven by a pattern on the Arturia Keystep Pro which also has a curve value in the pattern affecting the filter.\\nI decided to use Reason Studios Redrum for the drums just to create a set of limits. There are no options for step probability or individual track length and timing for instance.\\nI wanted to put something trancey over the top so I reached for Rob Papen Predator RE. Turned out the default patch that loaded did exactly what I was imagining so I didn't even bother trying to create an original sound. I used Reason Studio Scales & Chords to derive chords from single notes on the keyboard.\\nBecause it was coming together very quickly and I would have been too much of an interruption to wire up and prgram a 303 style hardware device I used  Audiorealism abl2 to get the idea down.\\n",
-        "File Name": "Insufficient Vestiges Of Dread.wav",
-        "trackId": "1305363874",
-        "trackLink": "https://soundcloud.com/anonymousperpetrators/insufficient-vestiges-of-dread",
-        "Track Image": "insufficient_vestiges_of_dread.png",
-        "trackPageColour": "hsl(275deg 67% 23%)",
-        "image": "/insufficient_vestiges_of_dread.png",
-        "title": "Insufficient Vestiges Of Dread"
-    },
-    {
         "Stub": "infusive-blurple",
         "Devices": "Korg Volca Beats, Roland TB-3",
         "Description": "Description",
