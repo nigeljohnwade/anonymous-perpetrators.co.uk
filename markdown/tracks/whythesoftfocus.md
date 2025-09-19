@@ -4,10 +4,11 @@ trackPageColour: hsl(103deg 100% 4%)
 image: /why_the_soft_focus.png
 title: Why The Soft Focus
 trackLink: https://soundcloud.com/anonymousperpetrators/why-the-soft-focus
+date: '2025-09-19'
 ---
 Title is a snippet of chat during Lockdown Zoom Poker.
 
-File creation date is 8th December 2021 for the Reason 12 file. At the time of writing I have moved it over to Reason 13. 
+File creation date is 19th November 2021 for the first Reason 12 file. There's a new Reason 12 file created on 8th December, 2021 in a different directory, so I guess that was probably just a reorganisation artifact. At the time of writing I have moved it over to Reason 13. 
 
 I can't remember if the Moog Werkstatt was gate triggered by a device that could receive MIDI and output Gate, or if it is just a freeform VCA LFO in square mode. This was the starting point though. I had not long had the Werkstatt and was spending a lot of time playing with it to learn how to use it.
 
