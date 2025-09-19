@@ -1,5 +1,6 @@
 .block{
     max-width: var(--longform-text);
+    width: var(--longform-text);
     padding-bottom: var(--gutter);
 }
 

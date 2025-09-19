@@ -18,7 +18,6 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
                 style={{
                     padding: '1rem',
                     backgroundColor: 'hsl(0deg 0% 24% / 78%)',
-                    maxWidth: 'var(--longform-text)',
                 }}
             >
                 <div
@@ -26,6 +25,10 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
                         'tk-itc-avant-garde-gothic-pro',
                         styles['blog__body'],
                     ].join(' ')}
+                    style={{
+                        maxWidth: 'var(--longform-text)',
+                        Width: 'var(--longform-text)',
+                    }}
                 >
                     <ReactMarkdown>{markdownBody}</ReactMarkdown>
                 </div>
