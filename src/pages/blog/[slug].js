@@ -18,6 +18,7 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
                 style={{
                     padding: '1rem',
                     backgroundColor: 'hsl(0deg 0% 24% / 78%)',
+                    flexBasis: '50%',
                 }}
             >
                 <div
