@@ -5,9 +5,9 @@ import { glob } from 'glob';
 
 import styles from './Blog.module.css';
 
-import Typography from '../../components/atoms/Typography/Typography';
-import Page from '../../components/layout/Page/Page';
-import Header from '../../components/organisms/Header/Header';
+import Typography from 'src/components/atoms/Typography/Typography';
+import Page from 'src/components/layout/Page/Page';
+import Header from 'src/components/organisms/Header/Header';
 
 export default function BlogTemplate({frontmatter, markdownBody}) {
 

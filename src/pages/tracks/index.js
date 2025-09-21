@@ -39,7 +39,7 @@ export async function getStaticProps() {
 
     // getting the post data from the files contained
     // in the "posts" folder
-    const posts = keys.map((key, index) => {
+    const tracks = keys.map((key, index) => {
         // dynamically creating the post slug
         // from file name
         const slug = key
@@ -65,7 +65,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            allTracks: posts,
+            allTracks: tracks,
         },
     };
 }
