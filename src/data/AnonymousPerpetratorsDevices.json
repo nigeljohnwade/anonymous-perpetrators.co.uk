@@ -21,7 +21,7 @@
         "Device Name": "Arturia Microbrute",
         "Device Main Image": "arturia_microbrute.png",
         "Device Features": "Sequencer\\nMultiple Waveforms\\nPatchbay",
-        "Device Stub": "_microbrute"
+        "Device Stub": "microbrute"
     },
     {
         "Device Name": "Korg Volca Beats",
