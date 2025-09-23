@@ -27,7 +27,7 @@ Polysix is playing the same MIDI notes as the Microbrute and using a similar com
 
 ## Software
 
-- Reason 13
+- Reason 12/13
 
 ### Devices
 
