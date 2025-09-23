@@ -9,9 +9,9 @@ Title based on a subtitle from the game Destiny 2, attempting to activate someth
 
 This was made around about the time I got access to the Red suite of VSTs, possibly when I got the Focusrite audio interface. There are Red compressors and Red EQs on everything.
 
-Generally whenever I am recording hardware devices that are CV & gate oriented I will use the Arturia Keystep Pro to sync up to Reason. Patterns programmed on the Arturia Keystep Pro will drive the CV, gate, and curve inputs of the device and the audio of a performance is captured into Reason.
+Generally whenever I am recording hardware devices that are CV & gate oriented I will use the Arturia KeystepPro to sync up to Reason. Patterns programmed on the Arturia KeystepPro will drive the CV, gate, and curve inputs of the device and the audio of a performance is captured into Reason.
 
-The Moog Werkstatt-01 & CV Expander on this is driven by a pattern on the Arturia Keystep Pro which also has a curve value in the pattern affecting the filter. This was recorded into Reason, which is in sync with the Keystep, and I twiddled with the knobs on the werkstatt. I have no record of how the werkstatt was set up. At this point I had nothing else going on, just this little pattern. I recorded about 6 minutes of  it.
+The Moog Werkstatt-01 & CV Expander on this is driven by a pattern on the Arturia KeystepPro which also has a curve value in the pattern affecting the filter. This was recorded into Reason, which is in sync with the Keystep, and I twiddled with the knobs on the werkstatt. I have no record of how the werkstatt was set up. At this point I had nothing else going on, just this little pattern. I recorded about 6 minutes of  it.
 
 I decided to use Reason Studios Redrum for the drums just to create a set of limits. There are no options for step probability or individual track length and timing for instance. However I ended up creating a bit of a nightmare tangle of cables and devices with compressors and EQs so I will have to revisit this and work out what the hell I was thinking at the time
 

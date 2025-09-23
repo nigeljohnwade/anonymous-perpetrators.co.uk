@@ -16,7 +16,7 @@ I recorded one take of Roland Aira TB-3, after several practice runs, and ended 
 
 There were a few experiments after that trying to find something that worked over the top, settling on a very simple set of notes (root, minor third, fifth) on the Blamsoft Viking Synthesizer using a suitably resonant sweeping boing sound.
 
-Feeling that it lacked enough low frequncies I copied the note track from the Blamsoft Viking Synthesizer and fed them into New Fangled Audio's Pendulate and created a nasty, deep, throaty growl kind of a drone.
+Feeling that it lacked enough low frequencies I copied the note track from the Blamsoft Viking Synthesizer and fed them into New Fangled Audio's Pendulate and created a nasty, deep, throaty growl kind of a drone.
 
 ## Hardware:
 
