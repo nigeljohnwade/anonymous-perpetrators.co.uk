@@ -7,7 +7,7 @@ import CardDeck from 'components/molecules/CardDeck/CardDeck';
 import matter from 'gray-matter';
 
 const DevicesPage = ({allDevices}) => {
-    console.log(allDevices)
+
     return (
         <Page>
             <Header pageTitle="Devices"/>

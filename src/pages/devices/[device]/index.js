@@ -5,15 +5,15 @@ import data from 'data/AnonymousPerpetratorsDevices.json';
 import DeviceCard from 'components/organisms/DeviceCard/DeviceCard';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
+import { glob } from 'glob';
+import matter from 'gray-matter';
 
-const TracksPage = () => {
-    const router = useRouter();
-    const deviceName = router.query.device;
-    const deviceItemData = data.filter(item => {
-        return item['Device Stub'] === deviceName;
-    })[0];
-    // const backgroundColor = deviceItemData[7] !== '' ? deviceItemData[7] : undefined;
-    const backgroundImage = deviceItemData['Device Main Image'] !== '' ? `url(/${deviceItemData['Device Main Image']})` : undefined;
+const TracksPage = ({
+    frontmatter,
+    markdownBody,
+}) => {
+    const deviceName = frontmatter.deviceName;
+    const backgroundImage = `url(/${frontmatter.deviceMainImage})`;
     const backgroundColor = 'black';
 
     return (
@@ -22,15 +22,18 @@ const TracksPage = () => {
             backgroundImage={backgroundImage}
             backgroundSize={'100vh'}
         >
-            <Header pageTitle={deviceItemData['Device Name']} />
+            <Header pageTitle={frontmatter.deviceName} />
             <div
                 style={{
                     flexBasis: '50%',
                 }}
             >
                 <DeviceCard
-                    key={deviceItemData['Device Name']}
-                    deviceItemData={deviceItemData}
+                    key={frontmatter.slug}
+                    deviceItemData={{
+                        frontmatter: frontmatter,
+                        markdownBody: markdownBody,
+                    }}
                 />
             </div>
         </Page>
@@ -40,20 +43,47 @@ const TracksPage = () => {
 export default TracksPage;
 
 export async function getStaticPaths() {
-    const paths = data.map(item => {
-        return {params: {device: item['Device Stub']}}
+    // getting all .md files from the posts directory
+    const devices = await glob.sync(`markdown/devices/*.md`);
+
+    // converting the file names to their slugs
+    // this is janky as fuck, need to look at this again
+    const deviceNames = devices.map((file) => {
+            if (file.indexOf('/') > -1) {
+                return file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim();
+            } else if (file.indexOf('\\') > -1) {
+                return file.split('\\')[2].replace(/ /g, ' - ').slice(0, -3).trim();
+            }
+        }
+    );
+
+    // creating a path for each of the `slug` parameter
+    const paths = deviceNames.map((device) => {
+        return {params: {device: device}};
     });
-    return {paths: paths, fallback: false};
+
+    return {
+        paths,
+        fallback: false,
+    };
 }
 
-export async function getStaticProps({params}) {
-    const deviceItemData = data.filter(item => {
-        return item['Device Stub'] === params.device;
-    })[0];
+export async function getStaticProps(context) {
+    // extracting the slug from the context
+    const device = context.params.device;
+
+    // retrieving the Markdown file associated to the slug
+    // and reading its data
+    const content = await import(`../../../../markdown/devices/${device}.md`)
+        .then((data) => {
+            return matter(data.default);
+        });
+
     return {
         props: {
-            deviceItemData: deviceItemData
-        }
+            frontmatter: content.data,
+            markdownBody: content.content,
+        },
     };
 }
 

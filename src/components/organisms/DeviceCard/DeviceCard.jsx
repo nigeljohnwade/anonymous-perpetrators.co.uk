@@ -3,6 +3,7 @@ import Typography from 'components/atoms/Typography/Typography';
 import Card from 'components/molecules/Card/Card';
 import CardHeader from '../../molecules/CardHeader/CardHeader';
 import styles from './DeviceCard.module.css';
+import ReactMarkdown from 'react-markdown';
 
 function DeviceCard({
     deviceItemData,
@@ -13,26 +14,19 @@ function DeviceCard({
                 <Typography
                     element="h2"
                 >
-                    {deviceItemData['Device Name']}
+                    {deviceItemData.frontmatter.manufacturer} {deviceItemData.frontmatter.deviceName}
                 </Typography>
             </CardHeader>
             <div
                 style={{
                     padding: '1rem'
                 }}
+                className="tk-itc-avant-garde-gothic-pro"
             >
                 <div className={styles.block}>
-                    <Typography element="h3">Features</Typography>
-                    {deviceItemData['Device Features'].split('\\n').map(p => (
-                            <Typography
-                                element="p"
-                                modifier="indent"
-                                key={p.toLowerCase().replace(' ', '_')}
-                            >
-                                {p}
-                            </Typography>
-                        )
-                    )}
+                    <ReactMarkdown>
+                        {deviceItemData.markdownBody}
+                    </ReactMarkdown>
                 </div>
             </div>
         </Card>
