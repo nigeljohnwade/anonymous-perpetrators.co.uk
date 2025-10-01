@@ -11,7 +11,7 @@ File creation date is 3rd November, 2022 for the first Reason 12 file I can find
 
 Something laid back and trippy, going to great extremes with the Drum Map player.
 
-First time use recording the Roland Boutique TB-03, which I picked up reasonably priced second hand from Reverb. I was keen to have another hardware 303 style device to see what it was like using both at the same time but I have only ever used one or the other. This one is a bit more like an actual TB-303 compared to the TB-3.
+First time use recording the Roland Boutique TB-03, which I picked up reasonably priced second hand from Reverb. I was keen to have another hardware 303 style device to see what it was like using both at the same time but I have only ever used one or the other. This one is supposed to be a bit more like an actual TB-303 compared to the TB-3. Honestly I rarely use it as it feels quite limited compared to the TB-3 and trying to tweak knobs on two machines at once is more difficult than I expected.
 
 First recording of the Moog Mavis as well. Not sure if I ever documented the patch but it's just a drone as far as I can tell. Probably recorded this first.
 
