@@ -1,7 +1,4 @@
 import React from 'react';
-import { useRouter } from 'next/router';
-
-import data from 'data/AnonymousPerpetratorsDevices.json';
 import DeviceCard from 'components/organisms/DeviceCard/DeviceCard';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
@@ -12,7 +9,6 @@ const TracksPage = ({
     frontmatter,
     markdownBody,
 }) => {
-    const deviceName = frontmatter.deviceName;
     const backgroundImage = `url(/${frontmatter.deviceMainImage})`;
     const backgroundColor = 'black';
 
