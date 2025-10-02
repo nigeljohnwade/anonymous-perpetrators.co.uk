@@ -54,7 +54,7 @@ export async function getStaticPaths() {
 
     // creating a path for each of the `slug` parameter
     const paths = tracknames.map((track) => {
-        return {params: {devicename: track}};
+        return {params: {trackname: track}};
     });
 
     return {
@@ -65,7 +65,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
     // extracting the slug from the context
-    const trackname = context.params.devicename;
+    const trackname = context.params.trackname;
 
     // retrieving the Markdown file associated to the slug
     // and reading its data
