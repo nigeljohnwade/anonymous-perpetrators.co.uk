@@ -1,7 +1,7 @@
 ---
 title: 'Hello World...'
 author: 'Nigel Wade'
-date: '2025-07-11T16:04:44.000Z'
+date: '2025-07-11'
 hero_image: '/vapor_grid.png'
 category: 'General'
 ---

@@ -4,6 +4,7 @@ trackPageColour: hsl(61, 23%, 35%)
 image: /at_best_im_a_maybe_but_likely_a_no.png
 title: At Best I'm A Maybe, But Likely A No
 trackLink: https://soundcloud.com/anonymousperpetrators/at-best-im-a-maybe-but-likely-a-no
+date: '2025-10-02'
 ---
 Title is a snippet of chat during Lockdown Zoom Poker.
 

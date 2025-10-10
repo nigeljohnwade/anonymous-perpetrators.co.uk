@@ -9,7 +9,10 @@ import Typography from 'components/atoms/Typography/Typography';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
 
-export default function BlogTemplate({frontmatter, markdownBody}) {
+export default function BlogTemplate({
+    frontmatter,
+    markdownBody,
+}) {
 
     return (
         <Page>
@@ -32,17 +35,26 @@ export default function BlogTemplate({frontmatter, markdownBody}) {
                     }}
                 >
                     <ReactMarkdown>{markdownBody}</ReactMarkdown>
-                </div>
-                <div className={styles.blog__footer}>
-                    <Typography element="p">
-                        Author: {frontmatter.author}
-                    </Typography>
-                    <Typography element="p">
-                        On: {new Date(frontmatter.date).toLocaleDateString()}
-                    </Typography>
-                    <Typography element="p">
-                        In: {frontmatter.category}
-                    </Typography>
+                    <div className={styles.blog__footer}>
+                        {
+                            frontmatter.author &&
+                            <Typography element="p">
+                                Author: {frontmatter.author}
+                            </Typography>
+                        }
+                        {
+                            frontmatter.date &&
+                            <Typography element="p">
+                                On: {new Date(frontmatter.date).toLocaleDateString()}
+                            </Typography>
+                        }
+                        {
+                            frontmatter.category &&
+                            <Typography element="p">
+                                In: {frontmatter.category}
+                            </Typography>
+                        }
+                    </div>
                 </div>
             </div>
         </Page>

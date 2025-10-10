@@ -5,6 +5,7 @@ import Card from 'components/molecules/Card/Card';
 import CardHeader from 'components/molecules/CardHeader/CardHeader';
 import styles from './TrackCard.module.css';
 import ReactMarkdown from 'react-markdown';
+import Typography from '../../atoms/Typography/Typography';
 
 function TrackCard({
     trackItemData,
@@ -30,6 +31,26 @@ function TrackCard({
                     <ReactMarkdown>
                         {trackItemData.markdownBody}
                     </ReactMarkdown>
+                    <div className={styles.blog__footer}>
+                        {
+                            trackItemData.frontmatter.author &&
+                            <Typography element="p">
+                                Author: {trackItemData.frontmatter.author}
+                            </Typography>
+                        }
+                        {
+                            trackItemData.frontmatter.date &&
+                            <Typography element="p">
+                                On: {new Date(trackItemData.frontmatter.date).toLocaleDateString()}
+                            </Typography>
+                        }
+                        {
+                            trackItemData.frontmatter.category &&
+                            <Typography element="p">
+                                In: {trackItemData.frontmatter.category}
+                            </Typography>
+                        }
+                    </div>
                 </div>
             </div>
         </Card>

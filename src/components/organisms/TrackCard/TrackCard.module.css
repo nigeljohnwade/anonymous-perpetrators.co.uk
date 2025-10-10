@@ -35,3 +35,16 @@
     color: var(--russian-violet);
     text-shadow: var(--text-highlight-glow), var(--text-shadow);
 }
+
+.blog__footer {
+    border-top: 2px solid var(--persian-rose);
+    padding-top: 0.25rem;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.blog__footer p {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+}
+

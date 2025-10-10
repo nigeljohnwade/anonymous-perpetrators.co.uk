@@ -27,6 +27,26 @@ function DeviceCard({
                     <ReactMarkdown>
                         {deviceItemData.markdownBody}
                     </ReactMarkdown>
+                    <div className={styles.blog__footer}>
+                        {
+                            deviceItemData.frontmatter.author &&
+                            <Typography element="p">
+                                Author: {deviceItemData.frontmatter.author}
+                            </Typography>
+                        }
+                        {
+                            deviceItemData.frontmatter.date &&
+                            <Typography element="p">
+                                On: {new Date(deviceItemData.frontmatter.date).toLocaleDateString()}
+                            </Typography>
+                        }
+                        {
+                            deviceItemData.frontmatter.category &&
+                            <Typography element="p">
+                                In: {deviceItemData.frontmatter.category}
+                            </Typography>
+                        }
+                    </div>
                 </div>
             </div>
         </Card>

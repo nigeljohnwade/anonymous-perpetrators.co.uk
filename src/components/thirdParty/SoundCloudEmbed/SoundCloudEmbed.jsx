@@ -14,7 +14,7 @@ const SoundCloudEmbed = ({
         <div className={styles['sound-cloud-embed']}>
             <iframe
                 width="100%"
-                height="20"
+                height="170"
                 scrolling="no"
                 frameBorder="no"
                 allow="autoplay"
