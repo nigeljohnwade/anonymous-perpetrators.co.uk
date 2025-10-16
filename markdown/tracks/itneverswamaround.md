@@ -4,6 +4,7 @@ trackPageColour: hsl(61, 23%, 35%)
 image: /it never swam.jpg
 title: It Never Swam Around Much So What Was The Point
 trackLink: https://soundcloud.com/anonymousperpetrators/it-never-swam-around-much-so-what-was-the-point
+date: '2025-10-02'
 ---
 
 Just something bouncy using a bunch of arpeggiated sounds.

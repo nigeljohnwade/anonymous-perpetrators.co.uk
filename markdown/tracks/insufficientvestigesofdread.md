@@ -4,6 +4,7 @@ trackPageColour: black
 image: /insufficient_vestiges_of_dread.png
 trackId: "1305363874"
 trackLink: https://soundcloud.com/anonymousperpetrators/insufficient-vestiges-of-dread
+date: '2025-10-02'
 ---
 Title based on a subtitle from the game Destiny 2, attempting to activate something but the player has insufficient vestiges of dread.
 

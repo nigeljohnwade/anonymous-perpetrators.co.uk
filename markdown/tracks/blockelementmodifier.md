@@ -4,6 +4,7 @@ trackPageColour: hsl(61, 23%, 35%)
 image: /block_element_modifier.png
 title: Block Element Modifier
 trackLink: https://soundcloud.com/anonymousperpetrators/ap-block-element-modifier-mastering
+date: '2025-10-02'
 ---
 
 ## Hardware

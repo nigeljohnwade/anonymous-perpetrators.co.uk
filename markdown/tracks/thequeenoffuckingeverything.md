@@ -4,6 +4,7 @@ trackPageColour: hsl(61, 23%, 0%)
 image: /queen.png
 title: The Queen Of F**cking Everything
 trackLink: https://soundcloud.com/anonymousperpetrators/the-queen-of-fking-everythg
+date: '2025-10-02'
 ---
 
 Experimenting with a different style.

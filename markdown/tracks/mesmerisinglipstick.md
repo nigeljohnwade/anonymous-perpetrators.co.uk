@@ -4,6 +4,7 @@ trackPageColour: hsl(343deg 81% 22%)
 image: /mesmerising_lipstick.png
 title: Mesmerising Lipstick
 trackLink: https://soundcloud.com/anonymousperpetrators/mesmerising-lipstick
+date: '2025-10-02'
 ---
 
 Roland 808 40th anniversary competition entry that never got entered.

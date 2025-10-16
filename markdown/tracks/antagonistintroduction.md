@@ -5,6 +5,7 @@ image: /block_element_modifier.png
 trackPageColour: hsl(61, 23%, 35%)
 trackId: "2109084144"
 trackLink: https://soundcloud.com/anonymousperpetrators/antagonist-introduction
+date: '2025-10-02'
 ---
 Title is a reference to a type of scene in a movie, to which this could form a soundtrack.
 

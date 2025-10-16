@@ -4,6 +4,7 @@ trackPageColour: hsl(61, 23%, 35%)
 image: /timber_porn.png
 title: Timber Porn
 trackLink: https://soundcloud.com/anonymousperpetrators/timber-porn
+date: '2025-10-02'
 ---
 
 ## Hardware 

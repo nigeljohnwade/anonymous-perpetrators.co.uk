@@ -4,6 +4,7 @@ trackPageColour: black
 image: /shawshank_finch_fugue.png
 title: Shawshank/Finch Fugue
 trackLink: https://soundcloud.com/anonymousperpetrators/shawshankfinch-fugue
+date: '2025-10-02'
 ---
 Title is a snippet of chat during Lockdown Zoom Poker.
 

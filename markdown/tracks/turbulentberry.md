@@ -4,6 +4,7 @@ trackLink: "https://soundcloud.com/anonymousperpetrators/turbulent-berry"
 trackPageColour: "hsl(333deg 83% 15%)"
 image: "/turbulent_berry.png"
 title: "Turbulent Berry"
+date: '2025-10-02'
 ---
 
 This was the first track I recorded using the Korg Volca Beats. 

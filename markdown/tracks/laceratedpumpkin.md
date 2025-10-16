@@ -4,6 +4,7 @@ trackLink: "https://soundcloud.com/anonymousperpetrators/lacerated-pumpkin"
 trackPageColour: "hsl(32deg 99% 22%)"
 image: "/lacerated_pumpkin.png"
 title: "Lacerated Pumpkin"
+date: '2025-10-02'
 ---
 The main line for this came from having an experiment with Lectric Panda Evolution. 
 I am a big fan of this type of device. 
