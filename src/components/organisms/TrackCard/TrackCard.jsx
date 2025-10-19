@@ -1,18 +1,23 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
+
+import styles from './TrackCard.module.css';
 
 import SoundCloudEmbed from 'components/thirdParty/SoundCloudEmbed/SoundCloudEmbed';
-import Card from 'components/molecules/Card/Card';
-import CardHeader from 'components/molecules/CardHeader/CardHeader';
-import styles from './TrackCard.module.css';
-import ReactMarkdown from 'react-markdown';
-import Typography from '../../atoms/Typography/Typography';
+import Typography from 'components/atoms/Typography/Typography';
+import PageBody from 'components/molecules/PageBody/PageBody';
 
 function TrackCard({
     trackItemData,
 }) {
     return (
-        <Card>
-            <CardHeader>
+        <PageBody>
+            <div
+                style={{
+                    padding: '1rem'
+                }}
+                className="tk-itc-avant-garde-gothic-pro"
+            >
                 <SoundCloudEmbed
                     artistLink="https://soundcloud.com/anonymousperpetrators"
                     artistName="anonymousperpetrators"
@@ -20,13 +25,6 @@ function TrackCard({
                     trackLink={trackItemData.frontmatter.trackLink}
                     trackName={trackItemData.frontmatter.title}
                 />
-            </CardHeader>
-            <div
-                style={{
-                    padding: '1rem'
-                }}
-                className="tk-itc-avant-garde-gothic-pro"
-            >
                 <div className={styles.block}>
                     <ReactMarkdown>
                         {trackItemData.markdownBody}
@@ -40,7 +38,7 @@ function TrackCard({
                         }
                         {
                             trackItemData.frontmatter.date &&
-                            <Typography element="p">
+                            <Typography element="p" suppressHydrationWarning>
                                 On: {new Date(trackItemData.frontmatter.date).toLocaleDateString()}
                             </Typography>
                         }
@@ -53,7 +51,7 @@ function TrackCard({
                     </div>
                 </div>
             </div>
-        </Card>
+        </PageBody>
     );
 }
 

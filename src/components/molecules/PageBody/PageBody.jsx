@@ -1,13 +1,13 @@
 import React from 'react';
 
-import styles from './Card.module.css';
+import styles from './PageBody.module.css';
 
 const Card = ({
     aspect = "free",
     children,
 }) => {
     return(
-        <div className={`${styles.card} ${styles[aspect]}`}>
+        <div className={styles['page-body']}>
             {children}
         </div>
     )

@@ -6,19 +6,14 @@ import styles from './Blog.module.css';
 import Page from 'components/layout/Page/Page';
 import Typography from 'components/atoms/Typography/Typography';
 import Header from 'components/organisms/Header/Header';
+import PageBody from 'components/molecules/PageBody/PageBody';
 
 const BlogList = ({allBlogs}) => {
 
     return (
         <Page>
             <Header pageTitle="blog" />
-            <div
-                style={{
-                    padding: '1rem',
-                    backgroundColor: 'hsl(0deg 0% 24% / 78%)',
-                    maxWidth: 'var(--longform-text)',
-                }}
-            >
+            <PageBody>
                 <ol className={styles['blog__list']}>
                     {
                         allBlogs && allBlogs.map(blog => {
@@ -28,6 +23,7 @@ const BlogList = ({allBlogs}) => {
                                         modifier="blog-title-link"
                                         element="a"
                                         href={`/blog/${blog.slug}`}
+                                        suppressHydrationWarning
                                     >
                                         <b>{blog.frontmatter.title}</b> by {blog.frontmatter.author} on {new Date(blog.frontmatter.date).toLocaleDateString()}
                                     </Typography>
@@ -36,7 +32,7 @@ const BlogList = ({allBlogs}) => {
                         })
                     }
                 </ol>
-            </div>
+            </PageBody>
         </Page>
     );
 };

@@ -44,7 +44,7 @@ export default function BlogTemplate({
                         }
                         {
                             frontmatter.date &&
-                            <Typography element="p">
+                            <Typography element="p" suppressHydrationWarning>
                                 On: {new Date(frontmatter.date).toLocaleDateString()}
                             </Typography>
                         }

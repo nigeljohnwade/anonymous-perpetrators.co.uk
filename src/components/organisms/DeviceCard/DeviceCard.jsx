@@ -1,22 +1,16 @@
 import React from 'react';
-import Typography from 'components/atoms/Typography/Typography';
-import Card from 'components/molecules/Card/Card';
-import CardHeader from '../../molecules/CardHeader/CardHeader';
-import styles from './DeviceCard.module.css';
 import ReactMarkdown from 'react-markdown';
+
+import styles from './DeviceCard.module.css';
+
+import Typography from 'components/atoms/Typography/Typography';
+import PageBody from 'components/molecules/PageBody/PageBody';
 
 function DeviceCard({
     deviceItemData,
 }) {
     return (
-        <Card>
-            <CardHeader>
-                <Typography
-                    element="h2"
-                >
-                    {deviceItemData.frontmatter.manufacturer} {deviceItemData.frontmatter.deviceName}
-                </Typography>
-            </CardHeader>
+        <PageBody>
             <div
                 style={{
                     padding: '1rem'
@@ -24,6 +18,9 @@ function DeviceCard({
                 className="tk-itc-avant-garde-gothic-pro"
             >
                 <div className={styles.block}>
+                    <h2>
+                        {deviceItemData.frontmatter.manufacturer} {deviceItemData.frontmatter.deviceName}
+                    </h2>
                     <ReactMarkdown>
                         {deviceItemData.markdownBody}
                     </ReactMarkdown>
@@ -36,7 +33,7 @@ function DeviceCard({
                         }
                         {
                             deviceItemData.frontmatter.date &&
-                            <Typography element="p">
+                            <Typography element="p" suppressHydrationWarning>
                                 On: {new Date(deviceItemData.frontmatter.date).toLocaleDateString()}
                             </Typography>
                         }
@@ -49,7 +46,7 @@ function DeviceCard({
                     </div>
                 </div>
             </div>
-        </Card>
+        </PageBody>
     );
 }
 

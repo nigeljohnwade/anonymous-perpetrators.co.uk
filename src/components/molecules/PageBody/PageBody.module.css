@@ -1,0 +1,10 @@
+.page-body{
+    --page-body-background: hsl(0deg 0% 24% / 78%);
+}
+
+.page-body {
+    position: relative;
+    height: 100%;
+    background-color: var(--page-body-background);
+    flex-shrink: 0;
+}
