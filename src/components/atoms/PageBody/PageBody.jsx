@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './PageBody.module.css';
 
 const Card = ({
-    aspect = "free",
     children,
 }) => {
     return(
