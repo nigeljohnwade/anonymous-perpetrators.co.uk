@@ -7,7 +7,10 @@ const Card = ({
     children,
 }) => {
     return(
-        <div className={styles['page-body']}>
+        <div className={[
+            styles['page-body'],
+            'tk-itc-avant-garde-gothic-pro',
+        ].join(' ')}>
             {children}
         </div>
     )

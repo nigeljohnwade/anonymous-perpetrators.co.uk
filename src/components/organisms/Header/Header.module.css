@@ -1,21 +1,12 @@
-.header{
+.header {
     position: sticky;
     top: 0;
     z-index: 9;
-    margin: 0 -2rem;
+    margin: 0 calc(-1 * var(--gutter));
     padding: 1rem 2rem 2rem 2rem;
-    background:
-        linear-gradient(180deg, hsl(0deg 0 0 / 75%) 0%, hsl(0deg 0 0 / 25%) 36%,hsl(0deg 0 0 / 5%) 66%, transparent)
-        ,linear-gradient(180deg, hsl(0deg 0 0 / 50%) 0%, hsl(0deg 0 0 / 20%) 25%, transparent)
+    background: linear-gradient(180deg, hsl(0deg 0 0 / 75%) 0%, hsl(0deg 0 0 / 25%) 36%, hsl(0deg 0 0 / 5%) 66%, transparent), linear-gradient(180deg, hsl(0deg 0 0 / 50%) 0%, hsl(0deg 0 0 / 20%) 25%, transparent)
 }
 
-.header h1{
+.header h1 {
     margin: 1rem 0 0 2rem;
-}
-
-@media screen and (max-width: 960px) {
-    .header{
-        gap: 0;
-        margin: 0 -1rem;
-    }
 }

@@ -18,20 +18,14 @@ const TracksPage = ({
             backgroundImage={backgroundImage}
             backgroundSize={'100vh'}
         >
-            <Header pageTitle={frontmatter.deviceName} />
-            <div
-                style={{
-                    flexBasis: '50%',
+            <Header pageTitle={frontmatter.deviceName}/>
+            <DeviceCard
+                key={frontmatter.slug}
+                deviceItemData={{
+                    frontmatter: frontmatter,
+                    markdownBody: markdownBody,
                 }}
-            >
-                <DeviceCard
-                    key={frontmatter.slug}
-                    deviceItemData={{
-                        frontmatter: frontmatter,
-                        markdownBody: markdownBody,
-                    }}
-                />
-            </div>
+            />
         </Page>
     );
 };

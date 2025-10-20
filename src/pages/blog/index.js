@@ -6,7 +6,7 @@ import styles from './Blog.module.css';
 import Page from 'components/layout/Page/Page';
 import Typography from 'components/atoms/Typography/Typography';
 import Header from 'components/organisms/Header/Header';
-import PageBody from 'components/molecules/PageBody/PageBody';
+import PageBody from 'components/atoms/PageBody/PageBody';
 
 const BlogList = ({allBlogs}) => {
 

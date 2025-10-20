@@ -13,17 +13,13 @@ const TracksPage = ({
     const backgroundColor = frontmatter.trackPageColour !== '' ? frontmatter.trackPageColour : undefined;
     const backgroundImage = frontmatter.image !== '' ? `url(${frontmatter.image})` : undefined;
 
-    return (<Page
-        backgroundColor={backgroundColor}
-        backgroundImage={backgroundImage}
-        backgroundSize={'100vh'}
-    >
-        <Header pageTitle={frontmatter.title} />
-        <div
-            style={{
-                flexBasis: '50%',
-            }}
+    return (
+        <Page
+            backgroundColor={backgroundColor}
+            backgroundImage={backgroundImage}
+            backgroundSize={'100vh'}
         >
+            <Header pageTitle={frontmatter.title}/>
             <TrackCard
                 key={frontmatter.slug}
                 trackItemData={{
@@ -31,8 +27,8 @@ const TracksPage = ({
                     markdownBody: markdownBody,
                 }}
             />
-        </div>
-    </Page>);
+        </Page>
+    );
 };
 
 export default TracksPage;

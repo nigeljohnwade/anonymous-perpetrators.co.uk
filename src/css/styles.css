@@ -1,22 +1,21 @@
-:root{
+:root {
     --h1-font-size: 3rem;
     --gutter: 2rem;
     --transition: 300ms;
     --white: #fff;
-    --text-shadow:
-        0 0 24px black,
-        0 0 12px black,
-        0 0 6px black,
-        0 0 1px black;
-    --text-glow:
-        0 0 24px currentColor,
-        0 0 12px currentColor,
-        0 0 6px currentColor,
-        0 0 1px currentColor;
-    --text-highlight-glow:
-        0 0 6px var(--white),
-        0 0 3px var(--white),
-        0 0 1px var(--white);
+    --black: #000;
+    --code-background: hsl(32 93% 65% / 25%);
+    --text-shadow: 0 0 24px black,
+    0 0 12px black,
+    0 0 6px black,
+    0 0 1px black;
+    --text-glow: 0 0 24px currentColor,
+    0 0 12px currentColor,
+    0 0 6px currentColor,
+    0 0 1px currentColor;
+    --text-highlight-glow: 0 0 6px var(--white),
+    0 0 3px var(--white),
+    0 0 1px var(--white);
     /* https://www.schemecolor.com/vaporwave.php */
     --persian-rose: hsl(329, 92%, 57%);
     --rajah: hsl(32, 93%, 65%);
@@ -56,24 +55,32 @@ body {
     font-weight: 300;
 }
 
-h1{
+h1 {
     text-align: right;
     text-shadow: var(--text-shadow);
 }
 
-h2, h3, h4, h5, h6{
+h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-b, bold{
+b, bold {
     font-weight: 500;
 }
-.longform-text{
+
+.longform-text {
     max-width: var(--longform-text);
 }
 
-p{
+p {
     line-height: 1.25;
+}
+
+code {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--code-background);
+    font-family: monospace;
 }
 
 .background * {

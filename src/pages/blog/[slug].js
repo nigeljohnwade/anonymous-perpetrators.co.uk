@@ -8,6 +8,7 @@ import styles from './Blog.module.css';
 import Typography from 'components/atoms/Typography/Typography';
 import Page from 'components/layout/Page/Page';
 import Header from 'components/organisms/Header/Header';
+import PageBody from 'components/atoms/PageBody/PageBody';
 
 export default function BlogTemplate({
     frontmatter,
@@ -17,16 +18,9 @@ export default function BlogTemplate({
     return (
         <Page>
             <Header pageTitle={frontmatter.title}/>
-            <div
-                style={{
-                    padding: '1rem',
-                    backgroundColor: 'hsl(0deg 0% 24% / 78%)',
-                    flexBasis: '50%',
-                }}
-            >
+            <PageBody>
                 <div
                     className={[
-                        'tk-itc-avant-garde-gothic-pro',
                         styles['blog__body'],
                     ].join(' ')}
                     style={{
@@ -44,7 +38,10 @@ export default function BlogTemplate({
                         }
                         {
                             frontmatter.date &&
-                            <Typography element="p" suppressHydrationWarning>
+                            <Typography
+                                element="p"
+                                suppressHydrationWarning
+                            >
                                 On: {new Date(frontmatter.date).toLocaleDateString()}
                             </Typography>
                         }
@@ -56,7 +53,7 @@ export default function BlogTemplate({
                         }
                     </div>
                 </div>
-            </div>
+            </PageBody>
         </Page>
     );
 }
