@@ -9,7 +9,7 @@ const HomePage = () => {
     return (
         <Page>
             <Header pageTitle="Anonymous Perpetrators"/>
-            <CardDeck additionalStyles={{'flexDirection': 'flex-end'}}>
+            <CardDeck>
                 <Card aspect="square">
                     <a
                         href="https://soundcloud.com/anonymousperpetrators"
