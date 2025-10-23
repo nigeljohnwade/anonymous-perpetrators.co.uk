@@ -45,6 +45,7 @@ export default function Document() {
                             target="_blank"
                             rel="noreferrer"
                         >
+                            {/*eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 className="statcounter"
                                 src="https://c.statcounter.com/12807722/0/85f40b8a/1/"
